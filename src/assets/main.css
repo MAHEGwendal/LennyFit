@@ -1,0 +1,20 @@
+@font-face {
+  font-family: KronaOne;
+  src: url("../assets/fonts/KronaOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: Zalando;
+  src: url("../assets/fonts/ZalandoSansSemiExpanded-VariableFont_wght.ttf");
+}
+
+@import "tailwindcss";
+
+@theme{
+  --color-moon: #f7f2e2;
+  --color-ink: #010112;
+  --color-molten: #f7560f;
+  --color-icemint: #9eff99;
+  --font-krona: KronaOne, sans-serif;
+  --font-zalando: Zalando, sans-serif;
+}
