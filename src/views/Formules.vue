@@ -50,7 +50,8 @@
                     </div>
 
                     <a 
-                        href="#"
+                        :href="section.link"
+                        target="_blank"
                         class="w-full max-w-50 text-center bg-molten text-ink font-zalando font-semibold py-3 px-6 lg:py-4 lg:px-3 lg:text-xl rounded-xl shadow-md hover:scale-105 transition-transform"
                     >
                         Prendre RDV
@@ -102,6 +103,7 @@ const prestations = [
     {
         id: 'distanciel',
         title: "Prestation en distanciel",
+        link: "https://testgwen.fillout.com/rencontre-avec-lenny-distenciel",
         cards: [
             { 
                 title: '4 SEMAINES', 
@@ -125,6 +127,7 @@ const prestations = [
     {
         id: 'presentiel',
         title: 'Prestation en présentiel',
+        link:"https://testgwen.fillout.com/rencontre-avec-lenny-presentiel",
         cards: [
             { title: 'LA SÉANCE', price: '50 €', duration: '1H / séance' },
             { title: '4 SÉANCES', price: '180 €', promo:'-10%', duration: '1H / séance' },
