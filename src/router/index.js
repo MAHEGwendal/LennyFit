@@ -4,6 +4,8 @@ import Presentation from '@/views/Presentation.vue'
 import Propositions from '@/views/Propositions.vue'
 import Formules from '@/views/Formules.vue'
 import Contact from '@/views/Contact.vue'
+import Confi from '@/views/Confi.vue'
+import Mentions from '@/views/Mentions.vue'
 
 const routes = [
   {
@@ -30,6 +32,16 @@ const routes = [
     path: '/Contact',
     name: 'Contact',
     component: Contact
+  },
+      {
+    path: '/Politique-Confidentialites',
+    name: 'Politique-Confidentialites',
+    component: Confi
+  },
+  {
+    path: '/Mentions-Legales',
+    name: 'Mentions-Legales',
+    component: Mentions
   },
 ]
 

@@ -1,6 +1,6 @@
 <template>
     <section
-        class="relative w-full min-h-[50vh] flex flex-col justify-center items-center py-12 text-center overflow-hidden mt-20">
+        class="relative w-full min-h-[50vh] flex flex-col justify-center items-center py-12 text-center overflow-hidden">
 
         <div class="absolute inset-0 z-0">
             <img src="/hero/hero4.jpg" alt="" class="w-full h-full object-cover" loading="lazy" />
@@ -8,7 +8,7 @@
         </div>
 
         <div class="relative z-10 flex flex-col items-center mx-auto w-full space-y-6">
-            <h1 class="font-krona text-3xl md:text-4xl font-medium leading-snug text-icemint">
+            <h1 class="font-krona text-2xl md:text-4xl font-medium leading-snug text-icemint">
                 Choisissez <span class="text-molten">l'accompagnement</span> qui propulsera vos <span
                     class="text-molten">résultats </span>
             </h1>
@@ -16,19 +16,15 @@
     </section>
 
     <div class="max-w-7xl mx-auto px-4 py-12 space-y-16">
-        
-        <!-- BOUCLE SUR LES SECTIONS (Distanciel & Présentiel) -->
         <div v-for="section in prestations" :key="section.id">
             <h2 class="font-krona text-2xl lg:text-4xl text-ink underline decoration-molten decoration-3 underline-offset-8 mb-10 text-left">
                 {{ section.title }}
             </h2>
-          
-            <!-- Conteneur Carrousel / Grille -->
+        
             <div 
                 :ref="el => { if (el) containers[section.id] = el }"
                 class="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto pb-6 snap-x snap-mandatory scrollbar-none scroll-smooth items-stretch"
             >
-                <!-- BOUCLE SUR LES CARTES DE LA SECTION -->
                 <div 
                     v-for="(card, index) in section.cards" 
                     :key="index"
@@ -61,8 +57,6 @@
                     </a>
                 </div>
             </div>
-
-            <!-- Boutons de navigation mobile -->
             <div class="flex justify-center items-center gap-4 mt-4 md:hidden space-x-20">
                 <button 
                     @click="scroll(section.id, 'prev')" 

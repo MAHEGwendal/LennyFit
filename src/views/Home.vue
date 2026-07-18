@@ -1,6 +1,6 @@
 <template>
     <section
-        class="relative w-full min-h-[90vh] flex flex-col justify-center items-center px-4 py-12 text-center overflow-hidden md:mt-20">
+        class="relative w-full min-h-[90vh] flex flex-col justify-center items-center px-4 py-12 text-center overflow-hidden">
 
         <div class="absolute inset-0 z-0">
             <img src="/hero/hero1.jpg" alt="" class="w-full h-full object-cover" fetchpriority="high" />
@@ -8,52 +8,38 @@
         </div>
 
         <div class="relative z-10 flex flex-col items-center mx-auto w-full space-y-6">
-
-            <!-- Logo principal de la marque -->
-            <div class="w-auto h-auto mb-2">
+            <div class="w-auto h-auto mb-2 animate-fade-in">
                 <h1 class="w-70 h-auto md:w-100 mb-2">
                     <img src="/logos/Logo_principal_BV.svg" alt="LennyFit - Coach sportif personnel à Nantes"
                         class="w-full h-auto" />
                 </h1>
             </div>
-
-            <!-- Slogan principal -->
-            <p class="font-krona text-2xl md:text-4xl font-semibold leading-snug text-icemint">
+            <p class="font-krona text-2xl md:text-4xl font-semibold leading-snug text-icemint animate-fade-in-left">
                 Dépassez vos <span class="text-molten">limites</span>, atteignez vos <span
                     class="text-molten">objectifs</span>
             </p>
-
-            <!-- Description des prestations -->
-            <p class="font-zalando text-icemint text-base font-medium md:text-2xl leading-relaxed max-w-xl px-2">
+            <p class="font-zalando text-icemint text-base font-medium md:text-2xl leading-relaxed max-w-xl px-2 animate-fade-in-left">
                 Un suivi sportif <span class="text-molten font-medium">individuel</span> et <span
                     class="text-molten font-medium">personnalisé</span>,
                 en présentiel à Nantes ou 100% en ligne.
             </p>
-
-            <!-- Les 3 cercles d'arguments de la maquette -->
-            <div class="flex flex-row items-center justify-center gap-3 md:gap-8 pt-8 w-full">
-
-                <!-- Cercle 1 -->
+            <div class="flex flex-row items-center justify-center gap-2 md:gap-8 pt-8 w-full">
                 <div
-                    class="flex flex-col items-center justify-center w-30 h-30 md:w-40 md:h-40 shrink-0 rounded-full border-3 border-molten bg-molten/15 backdrop-blur-sm shadow-lg">
+                    class="flex flex-col items-center justify-center w-27 h-27 md:w-40 md:h-40 shrink-0 rounded-full border-3 border-molten bg-molten/15 backdrop-blur-sm shadow-lg animate-fade-in-down">
                     <span class="font-krona text-2xl md:text-3xl font-bold text-icemint">+10</span>
                     <span class="font-zalando text-s md:text-sm text-moon leading-tight font-medium">
                         Champs d'action
                     </span>
                 </div>
-
-                <!-- Cercle 2 -->
                 <div
-                    class="flex flex-col items-center justify-center w-32 h-32 md:w-40 md:h-40 shrink-0 rounded-full border-3 border-molten bg-molten/15 backdrop-blur-sm shadow-lg">
+                    class="flex flex-col items-center justify-center w-30 h-30 md:w-40 md:h-40 shrink-0 rounded-full border-3 border-molten bg-molten/15 backdrop-blur-sm shadow-lg animate-fade-in-down ">
                     <span class="font-krona text-2xl md:text-3xl font-bold text-icemint">100%</span>
                     <span class="font-zalando text-s md:text-sm text-moon leading-tight font-medium">
                         Personnalisé
                     </span>
                 </div>
-
-                <!-- Cercle 3 -->
                 <div
-                    class="flex flex-col items-center justify-center w-30 h-30 md:w-40 md:h-40 shrink-0 rounded-full border-3 border-molten bg-molten/15 backdrop-blur-sm shadow-lg">
+                    class="flex flex-col items-center justify-center w-27 h-27 md:w-40 md:h-40 shrink-0 rounded-full border-3 border-molten bg-molten/15 backdrop-blur-sm shadow-lg animate-fade-in-down" >
                     <span class="font-krona text-2xl md:text-3xl font-bold text-icemint">6j/7</span>
                     <span class="font-zalando text-s md:text-sm text-moon leading-tight font-medium">
                         Disponible
@@ -92,7 +78,7 @@
                     </div>
 
                     <div class="mt-6 flex justify-center gap-8">
-                        <a href="https://www.instagram.com/sparagwen/" target="_blank" aria-label="Instagram"
+                        <a href="https://www.instagram.com/lenny.briey/" target="_blank" aria-label="Instagram"
                             class="transform hover:scale-110 transition">
                             <img src="/icon/instagramMolten.svg" alt="Instagram" class="w-20 h-20 md:w-25 md:h-25" />
                         </a>
@@ -100,7 +86,7 @@
                             class="transform hover:scale-110 transition">
                             <img src="/icon/facebookMolten.svg" alt="Facebook" class="w-20 h-20 md:w-25 md:h-25" />
                         </a>
-                        <a href="mailto:sparagwen@gmail.com" aria-label="E-mail"
+                        <a href="mailto:lennybriey96@gmail.com" aria-label="E-mail"
                             class="transform hover:scale-110 transition">
                             <img src="/icon/emailMolten.svg" alt="E-mail" class="w-20 h-20 md:w-25 md:h-25" />
                         </a>
@@ -151,9 +137,9 @@
                                     <p class="font-zalando text-sm md:text-base text-ink/90 leading-relaxed">
                                         Brûle des calories et affine ta silhouette durablement avec un programme adapté.
                                     </p>
-                                    <a href="#" class="font-zalando font-semibold text-ink underline hover:text-molten transition-colors w-max text-sm md:text-base">
+                                    <RouterLink to="/Propositions" class="font-zalando font-semibold text-ink underline hover:text-molten transition-colors w-max text-sm md:text-base">
                                         En savoir plus
-                                    </a>
+                                    </RouterLink>
                                 </div>
                             </div>
 
@@ -164,9 +150,9 @@
                                     <p class="font-zalando text-sm md:text-base text-ink/90 leading-relaxed">
                                         Reprends le sport en douceur et progresse en toute sécurité selon ton profil.
                                     </p>
-                                    <a href="#" class="font-zalando font-semibold text-ink underline hover:text-molten transition-colors w-max text-sm md:text-base">
+                                    <RouterLink to="/Propositions" class="font-zalando font-semibold text-ink underline hover:text-molten transition-colors w-max text-sm md:text-base">
                                         En savoir plus
-                                    </a>
+                                    </RouterLink>
                                 </div>
                             </div>
 
@@ -177,9 +163,9 @@
                                     <p class="font-zalando text-sm md:text-base text-ink/90 leading-relaxed">
                                         Tonifie tes muscles et gagne en force pour te sentir mieux au quotidien.
                                     </p>
-                                    <a href="#" class="font-zalando font-semibold text-ink underline hover:text-molten transition-colors w-max text-sm md:text-base">
+                                    <RouterLink to="/Propositions" class="font-zalando font-semibold text-ink underline hover:text-molten transition-colors w-max text-sm md:text-base">
                                         En savoir plus
-                                    </a>
+                                    </RouterLink>
                                 </div>
                             </div>
 
@@ -190,15 +176,13 @@
                                     <p class="font-zalando text-sm md:text-base text-ink/90 leading-relaxed">
                                         Développe ton potentiel dans la maîtrise des mouvements au poids du corps à l’aide de méthodes spécifiques.
                                     </p>
-                                    <a href="#" class="font-zalando font-semibold text-ink underline hover:text-molten transition-colors w-max text-sm md:text-base">
+                                    <RouterLink to="/Propositions" class="font-zalando font-semibold text-ink underline hover:text-molten transition-colors w-max text-sm md:text-base">
                                         En savoir plus
-                                    </a>
+                                    </RouterLink>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Section Sport Performance -->
                     <div class="flex-1 flex flex-col rounded-2xl shadow-xl/30 py-8 px-3 border-2 border-black/10">
                         <h3 class="font-krona text-2xl mb-8 text-ink text-center">Sport performance</h3>
                         <div class="space-y-6">
@@ -209,9 +193,9 @@
                                     <p class="font-zalando text-sm md:text-base text-ink/90 leading-relaxed">
                                         Développe ton volume musculaire et gagne en force grâce à un suivi d'entraînement optimisé.
                                     </p>
-                                    <a href="#" class="font-zalando font-semibold text-ink underline hover:text-molten transition-colors w-max text-sm md:text-base">
+                                    <RouterLink to="/Propositions" class="font-zalando font-semibold text-ink underline hover:text-molten transition-colors w-max text-sm md:text-base">
                                         En savoir plus
-                                    </a>
+                                    </RouterLink>
                                 </div>
                             </div>
 
@@ -222,9 +206,9 @@
                                     <p class="font-zalando text-sm md:text-base text-ink/90 leading-relaxed">
                                         Maîtrise le poids du corps et les charges lourdes pour maximiser ta force athlétique.
                                     </p>
-                                    <a href="#" class="font-zalando font-semibold text-ink underline hover:text-molten transition-colors w-max text-sm md:text-base">
+                                    <RouterLink to="/Propositions" class="font-zalando font-semibold text-ink underline hover:text-molten transition-colors w-max text-sm md:text-base">
                                         En savoir plus
-                                    </a>
+                                    </RouterLink>
                                 </div>
                             </div>
 
@@ -235,9 +219,9 @@
                                     <p class="font-zalando text-sm md:text-base text-ink/90 leading-relaxed">
                                         Maîtrise les techniques de charges lourdes pour développer une force maximale.
                                     </p>
-                                    <a href="#" class="font-zalando font-semibold text-ink underline hover:text-molten transition-colors w-max text-sm md:text-base">
+                                    <RouterLink to="/Propositions" class="font-zalando font-semibold text-ink underline hover:text-molten transition-colors w-max text-sm md:text-base">
                                         En savoir plus
-                                    </a>
+                                    </RouterLink>
                                 </div>
                             </div>
 
@@ -248,9 +232,9 @@
                                     <p class="font-zalando text-sm md:text-base text-ink/90 leading-relaxed">
                                         Booste ta vitesse, ta force et ton endurance pour exploser tes résultats en club.
                                     </p>
-                                    <a href="#" class="font-zalando font-semibold text-ink underline hover:text-molten transition-colors w-max text-sm md:text-base">
+                                    <RouterLink to="/Propositions" class="font-zalando font-semibold text-ink underline hover:text-molten transition-colors w-max text-sm md:text-base">
                                         En savoir plus
-                                    </a>
+                                    </RouterLink>
                                 </div>
                             </div>
                         </div>

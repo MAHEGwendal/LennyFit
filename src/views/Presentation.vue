@@ -1,7 +1,6 @@
 <template>
-    <!-- Section Hero -->
     <section
-        class="relative w-full min-h-[50vh] flex flex-col justify-center items-center py-12 text-center overflow-hidden mt-20">
+        class="relative w-full min-h-[50vh] flex flex-col justify-center items-center py-12 text-center overflow-hidden">
 
         <div class="absolute inset-0 z-0">
             <img src="/hero/hero2.jpg" alt="" class="w-full h-full object-cover" loading="lazy" />
@@ -57,8 +56,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Section Qualités -->
     <div class="bg-moon pb-20 px-6 lg:px-12">
         <div class="max-w-7xl mx-auto">
             <div
@@ -85,14 +82,11 @@
             </div>
         </div>
     </div>
-
-    <!-- Section Diplômes -->
     <div class="px-4 py-8 md:py-12 max-w-4xl mx-auto w-full">
         <div class="py-8 px-4 md:py-12 md:px-8 border-2 border-molten rounded-xl shadow-xl/20 bg-transparent">
             <h4 class="font-zalando font-bold text-2xl md:text-2xl text-center mb-8 text-ink">Mes diplômes</h4>
 
             <div class="flex flex-col space-y-6 max-w-3xl mx-auto">
-                <!-- Diplôme 1 -->
                 <div class="flex items-center gap-4">
                     <div
                         class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-molten bg-orange-300/50 shrink-0">
@@ -105,8 +99,6 @@
                         BPJEPS Activités de la Forme (Haltérophilie-Musculation)
                     </span>
                 </div>
-
-                <!-- Diplôme 2 -->
                 <div class="flex items-center gap-4">
                     <div
                         class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-molten bg-orange-300/50 shrink-0">
@@ -122,8 +114,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Actions & Liens -->
     <div
         class="flex flex-col lg:flex-row items-center mt-8 lg:justify-center space-y-8 lg:space-y-0 pb-10 lg:space-x-7">
         <RouterLink to="/Formules" role="button" aria-label="Consulter les formules de coaching"
@@ -138,7 +128,7 @@
     </div>
 
     <div class="mt-2 mb-10 flex justify-center gap-8">
-        <a href="https://www.instagram.com/sparagwen/" target="_blank" aria-label="Instagram (Nouvelle fenêtre)"
+        <a href="https://www.instagram.com/lenny.briey/" target="_blank" aria-label="Instagram (Nouvelle fenêtre)"
             class="transform hover:scale-110 transition">
             <img src="/icon/instagramMolten.svg" alt="Instagram" class="w-20 h-20 md:w-25 md:h-25" />
         </a>
@@ -146,7 +136,8 @@
             class="transform hover:scale-110 transition">
             <img src="/icon/facebookMolten.svg" alt="Facebook" class="w-20 h-20 md:w-25 md:h-25" />
         </a>
-        <a href="mailto:sparagwen@gmail.com" aria-label="Envoyer un e-mail" class="transform hover:scale-110 transition">
+        <a href="mailto:lennybriey96@gmail.com" aria-label="Envoyer un e-mail"
+            class="transform hover:scale-110 transition">
             <img src="/icon/emailMolten.svg" alt="E-mail" class="w-20 h-20 md:w-25 md:h-25" />
         </a>
     </div>
@@ -154,25 +145,25 @@
 
 <script setup>
 const qualite = [
-    { 
-        name: "Impliqué", 
-        texte: "Être présent à chaque étape pour guider, soutenir et vous faire progresser vers vos objectifs.", 
-        img: "/image/barrePoids.jpg" 
+    {
+        name: "Impliqué",
+        texte: "Être présent à chaque étape pour guider, soutenir et vous faire progresser vers vos objectifs.",
+        img: "/image/barrePoids.jpg"
     },
-    { 
-        name: "À l’écoute", 
-        texte: "Une relation humaine basée sur le respect mutuel et la transparence pour avancer ensemble en toute sérénité.", 
-        img: "/image/squat1.jpg" 
+    {
+        name: "À l’écoute",
+        texte: "Une relation humaine basée sur le respect mutuel et la transparence pour avancer ensemble en toute sérénité.",
+        img: "/image/squat1.jpg"
     },
-    { 
-        name: "Motivant", 
-        texte: "Entretenir l'envie d'avancer et de persévérer grâce à un soutien constant et des objectifs adaptés à chacun.", 
-        img: "/image/poids.jpg" 
+    {
+        name: "Motivant",
+        texte: "Entretenir l'envie d'avancer et de persévérer grâce à un soutien constant et des objectifs adaptés à chacun.",
+        img: "/image/poids.jpg"
     },
-    { 
-        name: "Pédagogue", 
-        texte: "Transmettre les clés de chaque mouvement pour t'aider à comprendre ton entraînement et progresser en toute autonomie.", 
-        img: "/image/dc.jpg" 
+    {
+        name: "Pédagogue",
+        texte: "Transmettre les clés de chaque mouvement pour t'aider à comprendre ton entraînement et progresser en toute autonomie.",
+        img: "/image/dc.jpg"
     }
 ]
 </script>
