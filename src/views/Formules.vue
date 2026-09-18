@@ -23,19 +23,19 @@
         
             <div 
                 :ref="el => { if (el) containers[section.id] = el }"
-                class="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto pb-6 snap-x snap-mandatory scrollbar-none scroll-smooth items-stretch"
+                class="flex md:grid md:grid-cols-4 gap-6 overflow-x-auto pb-6 snap-x snap-mandatory scrollbar-none scroll-smooth items-stretch"
             >
                 <div 
                     v-for="(card, index) in section.cards" 
                     :key="index"
-                    class="min-w-[70%] md:min-w-0 bg-molten/20 border-2 border-molten rounded-2xl p-8 flex flex-col items-center justify-between shadow-xl snap-center shrink-0"
+                    class="min-w-[70%] md:min-w-0 bg-molten/20 border-2 border-molten rounded-2xl p-4 flex flex-col items-center justify-between shadow-xl snap-center shrink-0"
                 >
                     <div class="w-full flex flex-col items-center">
                         <h3 class="font-krona text-xl md:text-2xl text-ink tracking-wide text-center">{{ card.title }}</h3>
-                        <div class="font-zalando font-bold text-6xl md:text-7xl text-ink my-4">{{ card.price }}</div>
+                        <div class="font-zalando font-bold text-3xl md:text-4xl text-center text-ink my-4">{{ card.subPrice }}</div>
                         
                         <p v-if="card.subPrice" class="font-zalando text-sm md:text-base text-ink/70 -mt-2 mb-4 font-medium italic">
-                            {{ card.subPrice }}
+                            {{ card.price }}
                         </p>
 
                         <p v-if="card.duration" class="font-zalando text-lg font-black underline text-ink/80 mb-4">{{ card.promo }}</p>
@@ -107,20 +107,26 @@ const prestations = [
         cards: [
             { 
                 title: '4 SEMAINES', 
-                price: '60 €', 
+                subPrice: '60 €', 
                 features: ['Programme personnalisé', 'Suivi hebdomadaire', '2 visios'] 
             },
             { 
                 title: '12 SEMAINES', 
-                price: '160 €', 
-                subPrice: 'Soit 53 € / 4 semaines',
+                price: 'soit 168 €', 
+                subPrice: '56 € / 4 semaines',
                 features: ['Accompagnement sur 3 cycles', 'Ajustements réguliers', 'Suivi progressif'] 
             },
             { 
                 title: '24 SEMAINES', 
-                price: '300 €', 
-                subPrice: 'Soit 50 € / 4 semaines',
-                features: ['Accompagnement longue durée', 'Progression durable', 'Optimisation des résultats'] 
+                price: 'soit 318 €', 
+                subPrice: '53 € / 4 semaines',
+                features: ['Accompagnement longue durée', 'Progression durable', ' Ajustements réguliers', 'Optimisation des résultats'] 
+            },
+            { 
+                title: '48 SEMAINES', 
+                price: 'soit 600 €', 
+                subPrice: '50 € / 4 semaines',
+                features: ['Accompagnement longue durée', 'Progression durable', ' Ajustements réguliers', 'Optimisation des résultats'] 
             }
         ]
     },
@@ -129,9 +135,9 @@ const prestations = [
         title: 'Prestation en présentiel',
         link:"https://testgwen.fillout.com/rencontre-avec-lenny-presentiel",
         cards: [
-            { title: 'LA SÉANCE', price: '50 €', duration: '1H / séance' },
-            { title: '4 SÉANCES', price: '180 €', promo:'-10%', duration: '1H / séance' },
-            { title: '8 SÉANCES', price: '350 €', promo:'Une séance offerte !', duration: '1H / séance' }
+            { title: 'LA SÉANCE', subPrice: '50 €', duration: '1H / séance' },
+            { title: '4 SÉANCES', subPrice: '180 €', promo:'-10%', duration: '1H / séance' },
+            { title: '8 SÉANCES', subPrice: '350 €', promo:'Une séance offerte !', duration: '1H / séance' }
         ]
     }
 ]
