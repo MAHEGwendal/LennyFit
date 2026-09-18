@@ -96,7 +96,7 @@
                         </svg>
                     </div>
                     <span class="font-zalando text-lg font-bold md:text-xl text-ink leading-snug">
-                        BPJEPS Activités de la Forme (Haltérophilie-Musculation)
+                        BPJEPS activité de la forme option musculation et haltérophilie
                     </span>
                 </div>
                 <div class="flex items-center gap-4">
@@ -108,7 +108,7 @@
                         </svg>
                     </div>
                     <span class="font-zalando text-lg font-bold md:text-xl text-ink leading-snug">
-                        BPJEPS Activités de la Forme (Cours Collectifs)
+                        BPJEPS activité de la forme option cours collectif
                     </span>
                 </div>
             </div>

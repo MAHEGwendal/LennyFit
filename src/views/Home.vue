@@ -18,7 +18,8 @@
                 Dépassez vos <span class="text-molten">limites</span>, atteignez vos <span
                     class="text-molten">objectifs</span>
             </p>
-            <p class="font-zalando text-icemint text-base font-medium md:text-2xl leading-relaxed max-w-xl px-2 animate-fade-in-left">
+            <p
+                class="font-zalando text-icemint text-base font-medium md:text-2xl leading-relaxed max-w-xl px-2 animate-fade-in-left">
                 Un suivi sportif <span class="text-molten font-medium">individuel</span> et <span
                     class="text-molten font-medium">personnalisé</span>,
                 en présentiel à Nantes ou 100% en ligne.
@@ -39,7 +40,7 @@
                     </span>
                 </div>
                 <div
-                    class="flex flex-col items-center justify-center w-27 h-27 md:w-40 md:h-40 shrink-0 rounded-full border-3 border-molten bg-molten/15 backdrop-blur-sm shadow-lg animate-fade-in-down" >
+                    class="flex flex-col items-center justify-center w-27 h-27 md:w-40 md:h-40 shrink-0 rounded-full border-3 border-molten bg-molten/15 backdrop-blur-sm shadow-lg animate-fade-in-down">
                     <span class="font-krona text-2xl md:text-3xl font-bold text-icemint">6j/7</span>
                     <span class="font-zalando text-s md:text-sm text-moon leading-tight font-medium">
                         Disponible
@@ -53,7 +54,8 @@
 
     <div class="bg-moon">
         <div class="py-8 px-4">
-            <div class="max-w-7xl lg:max-w-[1700px] mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-8 md:gap-15">
+            <div
+                class="max-w-7xl lg:max-w-[1700px] mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-8 md:gap-15">
                 <div class="shrink-0">
                     <img src="/image/lenny1.jpg" alt="Photo du coach Lenny"
                         class="w-60 h-60 md:w-110 md:h-110 rounded-full mx-auto md:mx-0 border-4 border-molten shadow-xl/30 object-cover" />
@@ -63,10 +65,11 @@
                     <h2 class="font-krona text-3xl lg:text-5xl mb-8">Salut, moi c'est Lenny !</h2>
 
                     <p class="font-zalando text-base md:text-3xl text-ink leading-relaxed mx-auto md:mx-0">
-                        Sport dans le sang et diplômes en poche, mon but est simple : t’aider à changer ton physique et
-                        ton état d’esprit pour de bon.
-                        Que tu sois à Nantes pour des séances en face-à-face, ou ailleurs, je te propose un suivi
-                        personnalisé, un programme sur mesure, à ton niveau et calé sur tes objectifs. <br/> 
+                        J’ai commencé mon parcours dans la callisthénie et les sports de force. Passionné par le
+                        mouvement et le dépassement de soi, je suis également tombé amoureux des cours collectifs en
+                        salle de fitness. Ce parcours varié me permet aujourd’hui d’avoir une vision globale et
+                        personnalisée de l’entraînement, afin de vous accompagner au mieux selon vos objectifs. <br />
+                    
                         Si t’es prêt à faire de ta santé une vraie priorité, contacte-moi !
                     </p>
 
@@ -100,8 +103,7 @@
                 <p class="text-center text-ink font-zalando mt-3">Vidéo de présentation — cliquez pour lancer</p>
                 <div
                     class="relative rounded-2xl overflow-hidden shadow-lg aspect-video bg-black/40 border-2 border-molten">
-                    <img src="/video/placeholder.jpg" alt="Aperçu vidéo"
-                        class="w-full h-full object-cover" />
+                    <img src="/video/placeholder.jpg" alt="Aperçu vidéo" class="w-full h-full object-cover" />
 
                     <button aria-label="Lire la vidéo" class="absolute inset-0 flex items-center justify-center">
                         <span
@@ -133,11 +135,13 @@
                             <div class="bg-icemint flex items-center p-5 rounded-2xl gap-2 shadow-xl/20">
                                 <img src="/icon/pertePoid.svg" alt="" class="w-16 h-16 shrink-0 my-auto">
                                 <div class="flex flex-col text-left space-y-2">
-                                    <h4 class="font-zalando font-medium text-2xl text-ink leading-tight">Perte de poids</h4>
+                                    <h4 class="font-zalando font-medium text-2xl text-ink leading-tight">Perte de poids
+                                    </h4>
                                     <p class="font-zalando text-sm md:text-base text-ink/90 leading-relaxed">
                                         Brûle des calories et affine ta silhouette durablement avec un programme adapté.
                                     </p>
-                                    <RouterLink to="/Propositions" class="font-zalando font-semibold text-ink underline hover:text-molten transition-colors w-max text-sm md:text-base">
+                                    <RouterLink to="/Propositions"
+                                        class="font-zalando font-semibold text-ink underline hover:text-molten transition-colors w-max text-sm md:text-base">
                                         En savoir plus
                                     </RouterLink>
                                 </div>
@@ -146,11 +150,13 @@
                             <div class="bg-icemint flex items-center p-5 rounded-2xl gap-5 shadow-xl/20">
                                 <img src="/icon/heart.svg" alt="" class="w-16 h-16 shrink-0 my-auto">
                                 <div class="flex flex-col text-left space-y-2">
-                                    <h4 class="font-zalando font-medium text-2xl text-ink leading-tight">Activité physique adaptée (APA)</h4>
+                                    <h4 class="font-zalando font-medium text-2xl text-ink leading-tight">Activité
+                                        physique adaptée (APA)</h4>
                                     <p class="font-zalando text-sm md:text-base text-ink/90 leading-relaxed">
                                         Reprends le sport en douceur et progresse en toute sécurité selon ton profil.
                                     </p>
-                                    <RouterLink to="/Propositions" class="font-zalando font-semibold text-ink underline hover:text-molten transition-colors w-max text-sm md:text-base">
+                                    <RouterLink to="/Propositions"
+                                        class="font-zalando font-semibold text-ink underline hover:text-molten transition-colors w-max text-sm md:text-base">
                                         En savoir plus
                                     </RouterLink>
                                 </div>
@@ -159,24 +165,13 @@
                             <div class="bg-icemint flex items-center p-5 rounded-2xl gap-5 shadow-xl/20">
                                 <img src="/icon/poids.svg" alt="" class="w-16 h-16 shrink-0 my-auto">
                                 <div class="flex flex-col text-left space-y-2">
-                                    <h4 class="font-zalando font-medium text-2xl text-ink leading-tight">Renforcement du corps</h4>
+                                    <h4 class="font-zalando font-medium text-2xl text-ink leading-tight">Renforcement du
+                                        corps</h4>
                                     <p class="font-zalando text-sm md:text-base text-ink/90 leading-relaxed">
                                         Tonifie tes muscles et gagne en force pour te sentir mieux au quotidien.
                                     </p>
-                                    <RouterLink to="/Propositions" class="font-zalando font-semibold text-ink underline hover:text-molten transition-colors w-max text-sm md:text-base">
-                                        En savoir plus
-                                    </RouterLink>
-                                </div>
-                            </div>
-
-                            <div class="bg-icemint flex items-center p-5 rounded-2xl gap-5 shadow-xl/20">
-                                <img src="/icon/calis.svg" alt="" class="w-16 h-16 shrink-0 my-auto">
-                                <div class="flex flex-col text-left space-y-2">
-                                    <h4 class="font-zalando font-medium text-2xl text-ink leading-tight">Entraînement callisthénie</h4>
-                                    <p class="font-zalando text-sm md:text-base text-ink/90 leading-relaxed">
-                                        Développe ton potentiel dans la maîtrise des mouvements au poids du corps à l’aide de méthodes spécifiques.
-                                    </p>
-                                    <RouterLink to="/Propositions" class="font-zalando font-semibold text-ink underline hover:text-molten transition-colors w-max text-sm md:text-base">
+                                    <RouterLink to="/Propositions"
+                                        class="font-zalando font-semibold text-ink underline hover:text-molten transition-colors w-max text-sm md:text-base">
                                         En savoir plus
                                     </RouterLink>
                                 </div>
@@ -189,50 +184,44 @@
                             <div class="bg-icemint flex items-center p-5 rounded-2xl gap-5 shadow-xl/20">
                                 <img src="/icon/muscle.svg" alt="" class="w-16 h-16 shrink-0 my-auto">
                                 <div class="flex flex-col text-left space-y-2">
-                                    <h4 class="font-zalando font-medium text-2xl text-ink leading-tight">Prise de masse</h4>
+                                    <h4 class="font-zalando font-medium text-2xl text-ink leading-tight">Prise de masse
+                                    </h4>
                                     <p class="font-zalando text-sm md:text-base text-ink/90 leading-relaxed">
-                                        Développe ton volume musculaire et gagne en force grâce à un suivi d'entraînement optimisé.
+                                        Développe ton volume musculaire et gagne en force grâce à un suivi
+                                        d'entraînement optimisé.
                                     </p>
-                                    <RouterLink to="/Propositions" class="font-zalando font-semibold text-ink underline hover:text-molten transition-colors w-max text-sm md:text-base">
+                                    <RouterLink to="/Propositions"
+                                        class="font-zalando font-semibold text-ink underline hover:text-molten transition-colors w-max text-sm md:text-base">
                                         En savoir plus
                                     </RouterLink>
                                 </div>
                             </div>
 
                             <div class="bg-icemint flex items-center p-5 rounded-2xl gap-5 shadow-xl/20">
-                                <img src="/icon/altero.svg" alt="" class="w-16 h-16 shrink-0 my-auto">
+                                <img src="/icon/calis.svg" alt="" class="w-16 h-16 shrink-0 my-auto">
                                 <div class="flex flex-col text-left space-y-2">
-                                    <h4 class="font-zalando font-medium text-2xl text-ink leading-tight">Préparation physique</h4>
+                                    <h4 class="font-zalando font-medium text-2xl text-ink leading-tight">Entraînement
+                                        callisthénie</h4>
                                     <p class="font-zalando text-sm md:text-base text-ink/90 leading-relaxed">
-                                        Maîtrise le poids du corps et les charges lourdes pour maximiser ta force athlétique.
+                                        Développe ton potentiel dans la maîtrise des mouvements au poids du corps à
+                                        l’aide de méthodes spécifiques.
                                     </p>
-                                    <RouterLink to="/Propositions" class="font-zalando font-semibold text-ink underline hover:text-molten transition-colors w-max text-sm md:text-base">
+                                    <RouterLink to="/Propositions"
+                                        class="font-zalando font-semibold text-ink underline hover:text-molten transition-colors w-max text-sm md:text-base">
                                         En savoir plus
                                     </RouterLink>
                                 </div>
                             </div>
-
                             <div class="bg-icemint flex items-center p-5 rounded-2xl gap-5 shadow-xl/20">
                                 <img src="/icon/squat.svg" alt="" class="w-16 h-16 shrink-0 my-auto">
                                 <div class="flex flex-col text-left space-y-2">
-                                    <h4 class="font-zalando font-medium text-2xl text-ink leading-tight">Préparation physique sport de force</h4>
+                                    <h4 class="font-zalando font-medium text-2xl text-ink leading-tight">Préparation
+                                        physique sport de force</h4>
                                     <p class="font-zalando text-sm md:text-base text-ink/90 leading-relaxed">
                                         Maîtrise les techniques de charges lourdes pour développer une force maximale.
                                     </p>
-                                    <RouterLink to="/Propositions" class="font-zalando font-semibold text-ink underline hover:text-molten transition-colors w-max text-sm md:text-base">
-                                        En savoir plus
-                                    </RouterLink>
-                                </div>
-                            </div>
-
-                            <div class="bg-icemint flex items-center p-5 rounded-2xl gap-5 shadow-xl/20">
-                                <img src="/icon/group.svg" alt="" class="w-16 h-16 shrink-0 my-auto">
-                                <div class="flex flex-col text-left space-y-2">
-                                    <h4 class="font-zalando font-medium text-2xl text-ink leading-tight">Préparation physique sport collectif</h4>
-                                    <p class="font-zalando text-sm md:text-base text-ink/90 leading-relaxed">
-                                        Booste ta vitesse, ta force et ton endurance pour exploser tes résultats en club.
-                                    </p>
-                                    <RouterLink to="/Propositions" class="font-zalando font-semibold text-ink underline hover:text-molten transition-colors w-max text-sm md:text-base">
+                                    <RouterLink to="/Propositions"
+                                        class="font-zalando font-semibold text-ink underline hover:text-molten transition-colors w-max text-sm md:text-base">
                                         En savoir plus
                                     </RouterLink>
                                 </div>
@@ -246,7 +235,7 @@
         <FaqAccordeon :items="homeFaq" />
 
         <div class="flex flex-col lg:flex-row items-center lg:justify-center space-y-8 lg:space-y-0 pb-10 lg:space-x-7">
-            <RouterLink to="/Formules"  role="button" aria-label="Voir les formules disponibles"
+            <RouterLink to="/Formules" role="button" aria-label="Voir les formules disponibles"
                 class="inline-block bg-molten border-3 border-transparent text-ink font-zalando px-8 py-3 rounded-xl font-medium text-xl shadow-xl/20 md:px-7 md:py-4 md:text-2xl transform hover:scale-110 transition">
                 Les formules
             </RouterLink>

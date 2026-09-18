@@ -13,7 +13,7 @@
             </h1>
         </div>
     </section>
-    <div class="bg-moon py-10 md:py-20 px-3 md:px-8">
+    <div class="bg-moon py-10 md:py-20 px-2 md:px-8">
         <div
             class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-center gap-12 xl:gap-20">
             <div class="shrink-0">
@@ -36,9 +36,9 @@
                 <div class="flex items-center gap-4 pb-4 border-b border-molten">
                     <img src="/icon/EmailBlack.svg" alt="" class="w-8 h-8 md:w-10 md:h-10 shrink-0"
                         aria-hidden="true" />
-                    <a href="mailto:lennybriey96@gmail.com"
+                    <a href="mailto:lennybrieypro@gmail.com"
                         class="font-zalando font-medium text-lg md:text-xl text-ink hover:text-molten transition-colors break-all">
-                        lennybriey96@gmail.com
+                        lennybrieypro@gmail.com
                     </a>
                 </div>
                 <div class="flex items-center gap-4 pb-4 border-b border-molten">

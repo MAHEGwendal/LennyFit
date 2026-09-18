@@ -44,10 +44,9 @@
 
   <div class="px-4 py-8 md:py-12 max-w-4xl mx-auto w-full">
     <div class="py-8 px-4 md:py-12 md:px-8 rounded-xl shadow-xl/30 bg-transparent">
-      <h4 class="font-zalando font-bold text-2xl md:text-3xl text-center mb-8 text-ink">Je suis là pour vous
-        accompagner dans votre parcours !</h4>
-      <p class="font-zalando text-md md:text-3xl text-center mb-8 text-ink">Prêt à passer au niveau supérieur ? À chaque
-        profil correspond une méthode et un rythme. Découvrez mes différentes offres pour trouver l'accompagnement idéal
+      <h4 class="font-zalando font-bold text-2xl md:text-3xl text-center mb-5 text-ink"> Prêt à passer au niveau supérieur ? </h4>
+      <p class="font-zalando text-md md:text-3xl text-center mb-8 text-ink">Je suis là pour vous accompagner dans votre parcours ! <br/>
+        À chaque profil correspond une méthode et un rythme. Découvrez mes différentes offres pour trouver l'accompagnement idéal
         et adapté à vos objectifs.</p>
 
       <div class="flex justify-center">
@@ -73,7 +72,7 @@ const categories = [
       },
       {
         title: "Activité physique adaptée (APA)",
-        description: "Utiliser le mouvement comme outil de prévention, de rééducation, de maintien de l'autonomie et d'amélioration du bien-être, grâce à des exercices spécifiquement adaptés à chaque individu.",
+        description: "Utiliser le mouvement comme outil de prévention, de rééducation, de maintien de l'autonomie et d'amélioration du bien-être, grâce à des exercices spécifiquement adaptés à chaque personne.",
         image: "/image/etirement.jpg"
       },
       {
@@ -81,16 +80,11 @@ const categories = [
         description: "Développer et entretenir l'activité musculaire afin d'améliorer la silhouette, la posture, la stabilité et les capacités fonctionnelles au quotidien.",
         image: "/image/sportif.jpg"
       },
-      {
-        title: "Entraînement callisthénie",
-        description: "Prends le contrôle de ton corps et découvre tout ce dont tu es capable avec l’entraînement au poids du corps. Que tu sois débutant ou déjà avancé, je suis là pour te guider pas à pas, avec des méthodes qui évoluent à ton rythme. On va travailler ta force, ta souplesse, ta coordination et ta confiance, le tout sans te blesser.",
-        image: "/image/traction.jpg"
-      }
     ]
   },
   {
     title: "Sport performance",
-    description: "Développer durablement les capacités physiques et mentales grâce à un entraînement personnalisé, afin d'atteindre des objectifs sportifs précis et mesurables.",
+    description: "Développer durablement les capacités physiques et mentales grâce à des méthodes d'entraînement personnalisé, afin d'atteindre des objectifs sportifs précis et mesurables.",
     services: [
       {
         title: "Prise de masse",
@@ -98,20 +92,15 @@ const categories = [
         image: "/image/grosMuscle.jpg"
       },
       {
-        title: "Préparation physique",
-        description: "Street workout, power lifting, street lifting : Mettre en place un entraînement structuré et personnalisé visant à améliorer les qualités de force, de résistance et de coordination tout en réduisant le risque de blessure.",
-        image: "/image/sportGroup2.jpg"
+        title: "Entraînement callisthénie",
+        description: "La callisthénie est un modèle d'entraînement basé sur le poids du corps. À travers des exercices comme les tractions, les pompes, les dips ou le gainage, elle permet de développer sa force, le contrôle du corps et sa mobilité. Accessible à tous les niveaux, elle s’adapte à vos objectifs, que vous souhaitiez vous remettre en forme, gagner en force ou apprendre des mouvements plus avancés.",
+        image: "/image/traction.jpg"
       },
       {
         title: "Préparation physique sport de force",
-        description: "Accompagner les sportifs dans le développement de leurs qualités physiques afin d'améliorer leurs performances, leur récupération et leur résistance aux contraintes du sport pratiqué.",
+        description: "Fais évoluer ta force avec un plan d’entraînement sur mesure, adapté à ton sport et à tes objectifs. Que tu sois fan de power-lifting, de street-lifting, street-workout ou de musculation, chaque programme est conçu pour booster tes résultats tout en limitant les risques de blessure.",
         image: "/image/squat3.jpg"
       },
-      {
-        title: "Préparation physique sport collectif",
-        description: "Fais évoluer ta force avec un plan d’entraînement sur mesure, adapté à ton sport et à tes objectifs. Que tu sois fan de powerlifting, de street lifting, d’haltérophilie ou de musculation, chaque programme est conçu pour booster tes résultats tout en limitant les risques de blessure.",
-        image: "/image/sportGroup.jpg"
-      }
     ]
   }
 ]

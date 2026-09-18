@@ -28,7 +28,7 @@
                 <div 
                     v-for="(card, index) in section.cards" 
                     :key="index"
-                    class="min-w-[70%] md:min-w-0 bg-icemint border-2 border-molten rounded-2xl p-8 flex flex-col items-center justify-between shadow-xl snap-center shrink-0"
+                    class="min-w-[70%] md:min-w-0 bg-molten/20 border-2 border-molten rounded-2xl p-8 flex flex-col items-center justify-between shadow-xl snap-center shrink-0"
                 >
                     <div class="w-full flex flex-col items-center">
                         <h3 class="font-krona text-xl md:text-2xl text-ink tracking-wide text-center">{{ card.title }}</h3>
