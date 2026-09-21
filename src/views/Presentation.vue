@@ -3,7 +3,7 @@
         class="relative w-full min-h-[50vh] flex flex-col justify-center items-center py-12 text-center overflow-hidden">
 
         <div class="absolute inset-0 z-0">
-            <img src="/hero/hero2.jpg" alt="" class="w-full h-full object-cover" loading="lazy" />
+            <img src="/hero/hero2.jpg" alt="" class="w-full h-full object-cover"/>
             <div class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
         </div>
 

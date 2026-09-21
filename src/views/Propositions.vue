@@ -2,7 +2,7 @@
   <section
     class="relative w-full min-h-[50vh] flex flex-col justify-center items-center py-12 text-center overflow-hidden">
     <div class="absolute inset-0 z-0">
-      <img src="/hero/hero3.jpg" alt="" class="w-full h-full object-cover" loading="lazy" />
+      <img src="/hero/hero3.jpg" alt="" class="w-full h-full object-cover"/>
       <div class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
     </div>
 
@@ -32,7 +32,7 @@
 
             <div class="w-24 sm:w-32 md:w-60 shrink-0"
               :class="service.globalIndex % 2 === 0 ? 'border-l-2 border-molten' : 'border-r-2 border-molten'">
-              <img :src="service.image" alt="" class="w-full h-full object-cover">
+              <img :src="service.image" :alt= "service.alt" class="w-full h-full object-cover">
             </div>
           </div>
         </div>
@@ -68,17 +68,20 @@ const categories = [
       {
         title: "Perte de poids",
         description: "Améliorer sa santé, son énergie et son bien-être en réduisant progressivement l'excès de poids de façon saine et durable.",
-        image: "/image/squat2.jpg"
+        image: "/image/squat2.jpg",
+        alt:"Une personne en surpoids qui fait des squats"
       },
       {
         title: "Activité physique adaptée (APA)",
         description: "Utiliser le mouvement comme outil de prévention, de rééducation, de maintien de l'autonomie et d'amélioration du bien-être, grâce à des exercices spécifiquement adaptés à chaque personne.",
-        image: "/image/etirement.jpg"
+        image: "/image/etirement.jpg",
+        alt:"Une femme qui fait des étirements"
       },
       {
         title: "Renforcement du corps",
         description: "Développer et entretenir l'activité musculaire afin d'améliorer la silhouette, la posture, la stabilité et les capacités fonctionnelles au quotidien.",
-        image: "/image/sportif.jpg"
+        image: "/image/sportif.jpg",
+        alt:"Homme prenant du repos après une séance de sport intense"
       },
     ]
   },
@@ -89,17 +92,20 @@ const categories = [
       {
         title: "Prise de masse",
         description: "Accompagner le développement musculaire en optimisant les méthodes d'entraînement, la progression des charges de travail et les habitudes favorisant la croissance musculaire.",
-        image: "/image/grosMuscle.jpg"
+        image: "/image/grosMuscle.jpg",
+        alt:"Homme qui contracte son biceps"
       },
       {
         title: "Entraînement callisthénie",
         description: "La callisthénie est un modèle d'entraînement basé sur le poids du corps. À travers des exercices comme les tractions, les pompes, les dips ou le gainage, elle permet de développer sa force, le contrôle du corps et sa mobilité. Accessible à tous les niveaux, elle s’adapte à vos objectifs, que vous souhaitiez vous remettre en forme, gagner en force ou apprendre des mouvements plus avancés.",
-        image: "/image/traction.jpg"
+        image: "/image/traction.jpg",
+        alt:"Homme faisant des tractions"
       },
       {
         title: "Préparation physique sport de force",
         description: "Fais évoluer ta force avec un plan d’entraînement sur mesure, adapté à ton sport et à tes objectifs. Que tu sois fan de power-lifting, de street-lifting, street-workout ou de musculation, chaque programme est conçu pour booster tes résultats tout en limitant les risques de blessure.",
-        image: "/image/squat3.jpg"
+        image: "/image/squat3.jpg",
+        alt:"Personne qui se prépare à faire des squats"
       },
     ]
   }
