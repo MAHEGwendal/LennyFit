@@ -108,7 +108,7 @@ const prestations = [
             { 
                 title: '4 SEMAINES', 
                 subPrice: '60 €', 
-                features: ['Programme personnalisé', 'Suivi hebdomadaire', '2 visios'] 
+                features: ['Programme personnalisé'] 
             },
             { 
                 title: '12 SEMAINES', 
@@ -144,8 +144,17 @@ const prestations = [
 
 const homeFaq = [
     {
-        question: "Comment choisir la durée de mon accompagnement à distance (4, 12 ou 24 semaines) ?",
+        title: "Questions courantes",
+        question: "Que comprends le coaching en distanciel ?",
+        answer: "1.Un programme personnalisé selon tes objectifs\n\n 2.Une adaptation et un suivi chaque semaine \n\n 3.Une visio et un bilan à la fin de chaque cycle de 4 semaines\n\n 4.Une progression mesurée grâce à un système d'évaluation\n\n 5.Des explications des méthodes et exercices proposés"
+    },
+    {
+        question: "Comment choisir la durée de mon accompagnement à distance (4, 12, 24 ou 48 semaines) ?",
         answer: "Tout dépend de votre objectif et de votre autonomie. La formule 4 semaines est idéale pour tester la méthode ou relancer une dynamique. Les formules 12 et 24 semaines sont conçues pour des transformations durables (prise de masse, progression en Street Lifting). Plus vous vous engagez sur la durée, plus le tarif est avantageux (jusqu'à un cycle complet offert sur la formule 24 semaines)."
+    },
+    {
+        question: "À quoi sert la prise de rendez-vous ?",
+        answer: "Le premier rendez-vous permet de faire connaissance, comprendre vos objectifs et construire un accompagnement adapté à votre profil.\n\nNous faisons le point sur votre niveau, vos habitudes, vos contraintes et vos attentes afin de définir une stratégie claire et personnalisée pour vous permettre de progresser efficacement.\n\nC’est aussi l’occasion de répondre à vos questions et de vous expliquer comment se déroule votre accompagnement."
     },
     {
         question: "Comment fonctionne l'analyse vidéo et le suivi WhatsApp en distanciel ?",

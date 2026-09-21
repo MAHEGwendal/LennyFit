@@ -1,8 +1,9 @@
 <template>
     <div class="bg-moon py-10 px-4">
         <div class="max-w-7xl mx-auto bg-moon border border-black/10 rounded-[2.5rem] p-6 md:p-10 shadow-sm">
-            <h2 class="font-krona text-4xl md:text-5xl text-ink text-center mb-10 tracking-tight">
-                FAQ
+            <h2 v-for="(item, index) in items" :key="index"
+                class="font-krona text-4xl md:text-5xl text-ink text-center mb-10 tracking-tight">
+                {{ item.title }}
             </h2>
             <div class="space-y-1">
                 <div v-for="(item, index) in items" :key="index" class="border-b border-black/5 last:border-0">
@@ -25,13 +26,21 @@
                         :class="[activeIndex === index ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0']">
                         <div class="overflow-hidden">
                             <div
-                                class="font-zalando text-sm md:text-base text-ink/80 px-6 pb-6 pt-2 leading-relaxed bg-molten/10 rounded-b-xl">
+                                class="font-zalando text-sm md:text-base text-ink/80 px-6 pb-6 pt-2 leading-relaxed bg-molten/10 rounded-b-xl whitespace-pre-line">
                                 {{ item.answer }}
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <p class="text-ink text-xl text-center py-5">Vous avez encore une question ? Retrouvez toutes les
+                informations dans notre FAQ complète.</p>
+
+            <RouterLink to="/Faq" role="button" aria-label="FAQ"
+                class="block w-fit mx-auto bg-molten text-ink font-zalando px-3 py-2 rounded-xl font-medium text-lg shadow-xl/20 md:px-4 md:py-3 md:text-xl transform hover:scale-110 transition">
+                Consulter la FAQ
+            </RouterLink>
 
         </div>
     </div>

@@ -54,6 +54,8 @@ const navLinks = [
     { name: 'Qui suis-je ?', to: '/Presentation' },
     { name: 'Propositions', to: '/Propositions' },
     { name: 'Formules', to: '/Formules' },
+    { name: 'FAQ', to: '/FAQ' },
     { name: 'Contact', to: '/Contact' },
+    
 ]
 </script>

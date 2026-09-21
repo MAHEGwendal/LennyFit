@@ -41,9 +41,9 @@
                 </div>
                 <div
                     class="flex flex-col items-center justify-center w-27 h-27 md:w-40 md:h-40 shrink-0 rounded-full border-3 border-molten bg-molten/15 backdrop-blur-sm shadow-lg animate-fade-in-down">
-                    <span class="font-krona text-2xl md:text-3xl font-bold text-icemint">6j/7</span>
-                    <span class="font-zalando text-s md:text-sm text-moon leading-tight font-medium">
-                        Disponible
+                    <span class="font-krona text-2xl md:text-3xl font-bold text-icemint">100%</span>
+                    <span class="font-zalando text-xs md:text-sm text-moon leading-tight font-medium">
+                        Accompagné
                     </span>
                 </div>
 
@@ -69,7 +69,7 @@
                         mouvement et le dépassement de soi, je suis également tombé amoureux des cours collectifs en
                         salle de fitness. Ce parcours varié me permet aujourd’hui d’avoir une vision globale et
                         personnalisée de l’entraînement, afin de vous accompagner au mieux selon vos objectifs. <br />
-                    
+
                         Si t’es prêt à faire de ta santé une vraie priorité, contacte-moi !
                     </p>
 
@@ -287,22 +287,28 @@ onMounted(() => {
 })
 
 const homeFaq = [
+    
     {
+        title: "Questions courantes",
         question: "Je n'ai pas fait de sport depuis des années, est-ce que je peux quand même commencer ?",
         answer: "Absolument ! Tous mes accompagnements sont adaptés à ton niveau de départ. Nous reprendrons les bases pas à pas et à ton rythme pour progresser en toute sécurité sans te décourager."
     },
     {
         question: "Où se déroulent les séances de coaching en présentiel ?",
-        answer: "Les séances en présentiel se déroulent principalement à Nantes et son agglomération, que ce soit à ton domicile, en extérieur ou dans une salle partenaire selon tes préférences."
+        answer: "Je m’adapte à votre environnement afin de vous proposer des séances de coaching pratiques, efficaces et adaptées à vos objectifs.\n\n📍 À domicile\nVous habitez à Nantes ou dans les alentours ? Je peux me déplacer directement à votre domicile pour votre séance.\n\n🌳 En extérieur\nEnvie de profiter du plein air ? Les séances peuvent également se dérouler dans un parc ou sur un espace sportif adapté.\n\n🏋️ En salle\nJe vous accueille également au club « Ma Salle RDV », situé à Orvault, sur la Route de Vannes. Je suis affiliée à cette salle, qui offre un environnement parfaitement adapté à la pratique du coaching.\n\nLe lieu est donc choisi ensemble, en fonction de votre situation, de vos objectifs et du type de séance prévu."
     },
     {
-        question: "Comment fonctionne le coaching 100 % en ligne ?",
-        answer: "Tu reçois un accès à ton programme d'entraînement et de suivi personnalisé. Chaque semaine, nous faisons un point complet (bilan, vidéo, ajustements) pour s'assurer de ta progression et garder une motivation maximale."
+        question: "Comment fonctionne le coaching distanciel ?",
+        answer: "Le coaching à distance fonctionne par cycles de 4 semaines, avec un accompagnement flexible, personnalisé et humain, où que vous soyez.\n\n🎯 Programme personnalisé\nSelon vos objectifs, votre niveau et vos contraintes.\n\n📈 Suivi et adaptation\nChaque semaine pour assurer une progression cohérente et durable.\n\n📹 2 visios par cycle\nUne en début et une en fin de cycle pour faire le point et ajuster la suite.\n\n🧠 Évaluation et progression\nAvec des méthodes expliquées pour vous permettre de comprendre votre entraînement.\n\n💬 Suivi WhatsApp\nQuestions, vidéos et retours directement avec moi, avec une réponse sous 2 jours ouvrés."
     },
     {
-        question: "Quelle est la fréquence idéale pour voir de vrais résultats ?",
-        answer: "Pour obtenir des résultats durables, une régularité de 2 à 3 séances par semaine est idéale. Cela dépend bien sûr de tes objectifs, de ton emploi du temps et de ton niveau de départ, ce que nous définirons ensemble."
-    }
+        question: "Le coaching comprend-il des conseils alimentaires ?",
+        answer: "Oui ! Je peux vous accompagner avec des conseils et recommandations générales autour de l’alimentation, en lien avec vos objectifs sportifs et votre progression. En revanche, je ne propose pas de programme diététique personnalisé. Pour un accompagnement nutritionnel spécifique, je vous recommande de faire appel à un professionnel de l’alimentation, comme un diététicien-nutritionniste.\n\nL’objectif est de vous aider à adopter de bonnes habitudes alimentaires, sans sortir du cadre de mon accompagnement sportif."
+    },
+    {
+        question: "Peut-on mixer séances en présentiel et en distanciel ?",
+        answer: "Oui, bien sûr !  L’accompagnement peut combiner séances en présentiel et suivi à distance, selon vos besoins, vos objectifs et votre organisation. Cela permet de profiter de la correction et de l’accompagnement en direct, tout en conservant la flexibilité du coaching à distance entre les séances."
+    },
 ]
 </script>
 

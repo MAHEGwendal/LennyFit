@@ -1,6 +1,7 @@
 <script setup>
 import Navbar from '@/components/Navbar.vue'
 import Footer from '@/components/Footer.vue'
+import ScrollToTopButton from '@/components/ScrollToTopButton.vue'
 </script>
 
 <template>
@@ -16,4 +17,5 @@ import Footer from '@/components/Footer.vue'
     <!-- Ton pied de page reste visible partout -->
     <Footer />
   </div>
+  <ScrollToTopButton />
 </template>

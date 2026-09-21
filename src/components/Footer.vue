@@ -5,17 +5,12 @@
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-center max-w-7xl mx-auto">
-      <div class="flex md:flex-col justify-between md:items-start space-y-4">
-        <div class="embedsocial-hashtag w-full max-w-[85%]"" 
-  data-ref=" ebc1a65c5553d1288b10da3a74a71d06b2f92ade">
-          <a class="feed-powered-by-es feed-powered-by-es-feed-img es-widget-branding" href="https://embedsocial.com/"
-            target="_blank" title="Widget by EmbedSocial">
-            <img src="https://embedsocial.com/cdn/icon/embedsocial-logo.webp" alt="EmbedSocial">
-            <div class="es-widget-branding-text">Widget by EmbedSocial</div>
-          </a>
-        </div>
-
-        <img src="/image/trustpilot.png" class="w-32 md:w-50 h-auto" alt="Note excellente sur Trustpilot">
+      <div class="flex justify-center md:flex-col md:items-start space-y-4">
+        <GoogleRatingWidget
+          :rating="5"
+          :review-count="10"
+          link="https://www.google.com/maps/place/Clinique+Vétérinaire+Argos+Saint-Herblain/@47.2268059,-1.6075739,17z/data=!4m6!3m5!1s0x4805ecf66056a805:0x14973a36fdb82bbe!8m2!3d47.228661!4d-1.605031!16s%2Fg%2F1tgnr0st?entry=ttu&g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D"
+        />
       </div>
 
       <nav class="flex flex-col items-center space-y-4" aria-label="Navigation rapide">
@@ -62,23 +57,14 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
-
-onMounted(() => {
-  const scriptId = "EmbedSocialHashtagScript"
-  if (!document.getElementById(scriptId)) {
-    const js = document.createElement("script")
-    js.id = scriptId
-    js.src = "https://embedsocial.com/cdn/ht.js"
-    document.getElementsByTagName("head")[0].appendChild(js)
-  }
-})
+import GoogleRatingWidget from '@/components/GoogleRatingWidget.vue'
 
 const navLinks = [
   { name: 'Accueil', href: '/' },
   { name: 'Présentation', href: '/Presentation' },
   { name: 'Détail des propositions', href: '/Propositions' },
   { name: 'Formules', href: '/Formules' },
+  { name: 'FAQ', href: '/Faq' },
   { name: 'Contact', href: '/Contact' },
 ]
 </script>

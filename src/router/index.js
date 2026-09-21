@@ -6,6 +6,7 @@ import Formules from '@/views/Formules.vue'
 import Contact from '@/views/Contact.vue'
 import Confi from '@/views/Confi.vue'
 import Mentions from '@/views/Mentions.vue'
+import Faq from '@/views/Faq.vue'
 
 const routes = [
   {
@@ -43,6 +44,11 @@ const routes = [
     name: 'Mentions-Legales',
     component: Mentions
   },
+  {
+    path:'/FAQ',
+    name:'FAQ',
+    component: Faq
+  }
 ]
 
 const router = createRouter({

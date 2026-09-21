@@ -22,16 +22,16 @@
         <p class="font-zalando text-md mb-8 lg:px-30 text-ink text-center">{{ categorie.description }}</p>
 
         <div class="space-y-6">
-          <div v-for="(service, index) in categorie.services" :key="service.title"
+          <div v-for="service in categorie.services" :key="service.title"
             class="bg-icemint flex items-stretch rounded-2xl shadow-xl/20 overflow-hidden"
-            :class="{ 'flex-row-reverse': index % 2 !== 0 }">
+            :class="{ 'flex-row-reverse': service.globalIndex % 2 !== 0 }">
             <div class="flex-1 flex flex-col text-left space-y-2 p-5 min-w-0">
               <h4 class="font-zalando font-medium text-lg lg:text-3xl text-ink leading-tight">{{ service.title }}</h4>
               <p class="font-zalando text-sm lg:text-lg text-ink/90 leading-relaxed">{{ service.description }}</p>
             </div>
 
             <div class="w-24 sm:w-32 md:w-60 shrink-0"
-              :class="index % 2 === 0 ? 'border-l-2 border-molten' : 'border-r-2 border-molten'">
+              :class="service.globalIndex % 2 === 0 ? 'border-l-2 border-molten' : 'border-r-2 border-molten'">
               <img :src="service.image" alt="" class="w-full h-full object-cover">
             </div>
           </div>
@@ -104,4 +104,12 @@ const categories = [
     ]
   }
 ]
+
+let runningIndex = 0
+categories.forEach((categorie) => {
+  categorie.services.forEach((service) => {
+    service.globalIndex = runningIndex
+    runningIndex++
+  })
+})
 </script>

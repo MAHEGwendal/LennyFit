@@ -56,20 +56,16 @@
                             Horaires de disponibilités
                         </h4>
                         <ul class="font-zalando text-base md:text-lg text-ink/90 space-y-1.5 max-w-md">
-                            <li class="flex justify-between"><span>Lundi :</span> <span class="font-semibold">09:00 -
+                            <li class="flex justify-between"><span>Mardi :</span> <span class="font-semibold">08:00 -
+                                    17:00</span></li>
+                            <li class="flex justify-between"><span>Mercredi :</span> <span class="font-semibold">08:00 -
+                                    19:00</span></li>
+                            <li class="flex justify-between"><span>Jeudi :</span> <span class="font-semibold">08:00 -
+                                    17:00</span></li>
+                            <li class="flex justify-between"><span>Vendredi :</span> <span class="font-semibold">08:00 -
                                     18:00</span></li>
-                            <li class="flex justify-between"><span>Mardi :</span> <span class="font-semibold">09:00 -
+                            <li class="flex justify-between"><span>Samedi :</span> <span class="font-semibold">08:00 -
                                     18:00</span></li>
-                            <li class="flex justify-between"><span>Mercredi :</span> <span class="font-semibold">09:00 -
-                                    18:00</span></li>
-                            <li class="flex justify-between"><span>Jeudi :</span> <span class="font-semibold">09:00 -
-                                    18:00</span></li>
-                            <li class="flex justify-between"><span>Vendredi :</span> <span class="font-semibold">09:00 -
-                                    18:00</span></li>
-                            <li class="flex justify-between"><span>Samedi :</span> <span class="font-semibold">09:00 -
-                                    18:00</span></li>
-                            <li class="flex justify-between"><span>Dimanche :</span> <span class="font-semibold">09:00 -
-                                    14:00</span></li>
                         </ul>
                     </div>
                 </div>
