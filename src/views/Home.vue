@@ -58,7 +58,7 @@
                 class="max-w-7xl lg:max-w-[1700px] mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-8 md:gap-15">
                 <div class="shrink-0">
                     <img src="/image/lenny1.jpg" alt="Photo du coach Lenny"
-                        class="w-60 h-60 md:w-110 md:h-110 rounded-full mx-auto md:mx-0 border-4 border-molten shadow-xl/30 object-cover" />
+                        class="w-60 h-60 md:w-110 md:h-110 rounded-full mx-auto md:mx-0 border-4 border-molten shadow-xl/30 object-cover" loading="lazy" />
                 </div>
 
                 <div class="flex-1 text-center lg:text-left">
