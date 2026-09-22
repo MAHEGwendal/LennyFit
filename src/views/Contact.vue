@@ -17,7 +17,7 @@
         <div
             class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-center gap-12 xl:gap-20">
             <div class="shrink-0">
-                <img src="/image/lenny1.jpg" alt="Photo du coach Lenny"
+                <img src="/image/lenny.jpg" alt="Photo du coach Lenny"
                     class="w-64 h-64 md:w-96 md:h-96 lg:w-110 lg:h-110 rounded-full border-4 border-molten shadow-2xl object-cover mx-auto" />
             </div>
             <div
