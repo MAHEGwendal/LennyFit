@@ -35,7 +35,7 @@
             </div>
 
             <p class="text-ink text-xl text-center py-5">Vous avez encore une question ? Retrouvez toutes les
-                informations dans notre FAQ complète.</p>
+                informations dans notre FAQ complète !</p>
 
             <RouterLink to="/Faq" role="button" aria-label="FAQ"
                 class="block w-fit mx-auto bg-molten text-ink font-zalando px-3 py-2 rounded-xl font-medium text-lg shadow-xl/20 md:px-4 md:py-3 md:text-xl transform hover:scale-110 transition">

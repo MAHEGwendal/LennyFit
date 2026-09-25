@@ -4,7 +4,7 @@
 
         <div class="absolute inset-0 z-0">
             <img src="/hero/hero2.jpg" alt="" class="w-full h-full object-cover" fetchpriority="high"/>
-            <div class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
+            <div class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
         </div>
 
         <div class="relative z-10 flex flex-col items-center mx-auto w-full space-y-6">
@@ -28,7 +28,7 @@
                 </h2>
 
                 <div class="shrink-0 z-10">
-                    <img src="/image/lenny1.jpg" alt="Photo du coach Lenny"
+                    <img src="/image/lenny2.jpg" alt="Photo du coach Lenny"
                         class="w-64 h-64 md:w-80 md:h-80 lg:w-120 lg:h-120 rounded-full border-4 border-molten shadow-2xl object-cover mx-auto" />
                 </div>
 

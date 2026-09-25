@@ -6,7 +6,7 @@
     aria-label="Voir nos avis Google"
     class="flex items-center gap-4 bg-moon rounded-full px-6 py-3 w-full max-w-[85%] hover:scale-105 transition-transform duration-200"
   >
-    <svg class="w-10 h-10 flex-shrink-0" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+    <svg class="w-10 h-10 shrink-0" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
       <path fill="#FFC107" d="M43.6 20.5H42V20.4H24v7.2h11.3C33.6 32 29.2 35 24 35c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.9 1.2 8 3.1l5.1-5.1C33.7 5.8 29.1 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.2-.1-2.4-.4-3.5z"/>
       <path fill="#FF3D00" d="M6.3 14.7l5.9 4.3C13.7 15.3 18.5 12 24 12c3.1 0 5.9 1.2 8 3.1l5.1-5.1C33.7 5.8 29.1 4 24 4 16.4 4 9.8 8.3 6.3 14.7z"/>
       <path fill="#4CAF50" d="M24 44c5.1 0 9.7-1.7 13.3-4.6l-6.1-5.2C29.3 35.6 26.8 36.5 24 36.5c-5.2 0-9.6-3-11.3-7.3l-5.9 4.6C10.1 39.6 16.6 44 24 44z"/>
@@ -54,12 +54,9 @@
 import { computed } from 'vue'
 
 const props = defineProps({
-  // Remplace par ta note réelle (visible sur ta fiche Google Business Profile)
   rating: { type: Number, default: 5 },
-  // Remplace par ton nombre d'avis réel
-  reviewCount: { type: Number, default: 10 },
-  // Lien vers ta fiche Google Maps / bouton "laisser un avis"
-  link: { type: String, default: 'https://www.google.com/maps/place/Clinique+Vétérinaire+Argos+Saint-Herblain/@47.2268059,-1.6075739,17z/data=!4m6!3m5!1s0x4805ecf66056a805:0x14973a36fdb82bbe!8m2!3d47.228661!4d-1.605031!16s%2Fg%2F1tgnr0st?entry=ttu&g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D' },
+  reviewCount: { type: Number, default: 1 },
+  link: { type: String, default: 'https://www.google.com/maps/place/LennyFit/@47.2383201,-1.6429067,12z/data=!3m1!4b1!4m6!3m5!1s0x2a6ab5f8560c691:0x1f5a6d95a661c95f!8m2!3d47.2382332!4d-1.5603346!16s%2Fg%2F11zxq84_jt?entry=ttu&g_ep=EgoyMDI2MDkyMS4wIKXMDSoASAFQAw%3D%3D' },
 })
 
 const starTypes = computed(() => {

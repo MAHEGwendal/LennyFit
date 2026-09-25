@@ -4,7 +4,7 @@
 
         <div class="absolute inset-0 z-0">
             <img src="/hero/hero4.jpg" alt="" class="w-full h-full object-cover" fetchpriority="high"/>
-            <div class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
+            <div class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
         </div>
 
         <div class="relative z-10 flex flex-col items-center mx-auto w-full space-y-6">
@@ -103,7 +103,7 @@ const prestations = [
     {
         id: 'distanciel',
         title: "Prestation en distanciel",
-        link: "https://testgwen.fillout.com/rencontre-avec-lenny-distenciel",
+        link: "https://lennyfit.fillout.com/rencontre-avec-le-coach-lenny-distanciel",
         cards: [
             { 
                 title: '4 SEMAINES', 
@@ -133,7 +133,7 @@ const prestations = [
     {
         id: 'presentiel',
         title: 'Prestation en présentiel',
-        link:"https://testgwen.fillout.com/rencontre-avec-lenny-presentiel",
+        link:"https://lennyfit.fillout.com/rencontre-avec-lenny-presentiel",
         cards: [
             { title: 'LA SÉANCE', subPrice: '50 €', duration: '1H / séance' },
             { title: '4 SÉANCES', subPrice: '180 €', promo:'-10%', duration: '1H / séance' },

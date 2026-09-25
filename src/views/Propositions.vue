@@ -80,7 +80,7 @@ const categories = [
       {
         title: "Renforcement du corps",
         description: "Développer et entretenir l'activité musculaire afin d'améliorer la silhouette, la posture, la stabilité et les capacités fonctionnelles au quotidien.",
-        image: "/image/sportif.jpg",
+        image: "/image/test.jpg",
         alt:"Homme prenant du repos après une séance de sport intense"
       },
     ]
@@ -98,7 +98,7 @@ const categories = [
       {
         title: "Entraînement callisthénie",
         description: "La callisthénie est un modèle d'entraînement basé sur le poids du corps. À travers des exercices comme les tractions, les pompes, les dips ou le gainage, elle permet de développer sa force, le contrôle du corps et sa mobilité. Accessible à tous les niveaux, elle s’adapte à vos objectifs, que vous souhaitiez vous remettre en forme, gagner en force ou apprendre des mouvements plus avancés.",
-        image: "/image/traction.jpg",
+        image: "/image/cali.jpg",
         alt:"Homme faisant des tractions"
       },
       {

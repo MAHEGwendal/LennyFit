@@ -8,8 +8,8 @@
       <div class="flex justify-center md:flex-col md:items-start space-y-4">
         <GoogleRatingWidget
           :rating="5"
-          :review-count="10"
-          link="https://www.google.com/maps/place/Clinique+Vétérinaire+Argos+Saint-Herblain/@47.2268059,-1.6075739,17z/data=!4m6!3m5!1s0x4805ecf66056a805:0x14973a36fdb82bbe!8m2!3d47.228661!4d-1.605031!16s%2Fg%2F1tgnr0st?entry=ttu&g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D"
+          :review-count="1"
+          link="https://www.google.com/maps/place/LennyFit/@47.2383201,-1.6429067,12z/data=!3m1!4b1!4m6!3m5!1s0x2a6ab5f8560c691:0x1f5a6d95a661c95f!8m2!3d47.2382332!4d-1.5603346!16s%2Fg%2F11zxq84_jt?entry=ttu&g_ep=EgoyMDI2MDkyMS4wIKXMDSoASAFQAw%3D%3D"
         />
       </div>
 

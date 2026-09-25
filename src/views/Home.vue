@@ -57,7 +57,7 @@
             <div
                 class="max-w-7xl lg:max-w-[1700px] mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-8 md:gap-15">
                 <div class="shrink-0">
-                    <img src="/image/lenny1.jpg" alt="Photo du coach Lenny"
+                    <img src="/image/lenny1.webp" alt="Photo du coach Lenny"
                         class="w-60 h-60 md:w-110 md:h-110 rounded-full mx-auto md:mx-0 border-4 border-molten shadow-xl/30 object-cover" loading="lazy" />
                 </div>
 
@@ -80,7 +80,7 @@
                         </RouterLink>
                     </div>
 
-                    <div class="mt-6 flex justify-center gap-8">
+                    <div class="mt-6 mb-6 flex justify-center gap-8">
                         <a href="https://www.instagram.com/lenny.briey/" target="_blank" aria-label="Instagram"
                             class="transform hover:scale-110 transition">
                             <img src="/icon/instagramMolten.svg" alt="Instagram" class="w-20 h-20 md:w-25 md:h-25" />
@@ -94,26 +94,6 @@
                             <img src="/icon/emailMolten.svg" alt="E-mail" class="w-20 h-20 md:w-25 md:h-25" />
                         </a>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="py-8 flex justify-center">
-            <div class="w-full max-w-3xl lg:max-w-4xl px-4">
-                <p class="text-center text-ink font-zalando mt-3">Vidéo de présentation — cliquez pour lancer</p>
-                <div
-                    class="relative rounded-2xl overflow-hidden shadow-lg aspect-video bg-black/40 border-2 border-molten">
-                    <img src="/video/placeholder.jpg" alt="Aperçu vidéo" class="w-full h-full object-cover" />
-
-                    <button aria-label="Lire la vidéo" class="absolute inset-0 flex items-center justify-center">
-                        <span
-                            class="flex items-center justify-center w-20 h-20 rounded-full bg-molten/95 hover:scale-105 transition-transform duration-200 shadow-lg cursor-pointer">
-                            <svg class="w-8 h-8 text-ink" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <path d="M8 5v14l11-7-11-7z" fill="currentColor" />
-                            </svg>
-                        </span>
-                    </button>
                 </div>
             </div>
         </div>
