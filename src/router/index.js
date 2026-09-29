@@ -7,6 +7,7 @@ import Contact from '@/views/Contact.vue'
 import Confi from '@/views/Confi.vue'
 import Mentions from '@/views/Mentions.vue'
 import Faq from '@/views/Faq.vue'
+import CookiesView from '@/views/CookiesView.vue'
 
 const routes = [
   {
@@ -48,7 +49,12 @@ const routes = [
     path:'/FAQ',
     name:'FAQ',
     component: Faq
-  }
+  },
+  {
+    path:'/Cookies',
+    name:'Cookies',
+    component: CookiesView
+  },
 ]
 
 const router = createRouter({

@@ -66,5 +66,6 @@ const navLinks = [
   { name: 'Formules', href: '/Formules' },
   { name: 'FAQ', href: '/Faq' },
   { name: 'Contact', href: '/Contact' },
+  { name: 'Gérer mes cookies', href: '/Cookies' },
 ]
 </script>

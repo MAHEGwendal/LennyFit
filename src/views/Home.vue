@@ -229,7 +229,7 @@
         <div class="px-2 py-5 lg:px-80">
             <div class="py-2 px-1 border-2 border-molten/40 rounded-xl shadow-xl/20">
                 <h3 class="font-krona text-xl text-center lg:text-left lg:px-4 lg:text-2xl">Ils me font confiance</h3>
-                <div class="embedsocial-hashtag" data-ref="cc620d56d954d48c62c5d59c2e4f1c481ac18555">
+                 <div class="embedsocial-hashtag" data-ref="cc620d56d954d48c62c5d59c2e4f1c481ac18555">
                     <a class="feed-powered-by-es feed-powered-by-es-feed-img es-widget-branding"
                         href="https://embedsocial.com/" target="_blank" title="Widget by EmbedSocial">
                     </a>
@@ -240,30 +240,32 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
+import { onMounted, onUnmounted } from 'vue'
 import FaqAccordeon from '@/components/FaqAccordeon.vue'
 
-onMounted(() => {
-    const scriptId = "EmbedSocialHashtagScript"
+const scriptId = 'EmbedSocialHashtagScript'
 
-    if (!document.getElementById(scriptId)) {
-        const js = document.createElement("script")
-        js.id = scriptId
-        js.src = "https://embedsocial.com/cdn/ht.js"
-        document.getElementsByTagName("head")[0].appendChild(js)
-    } else {
-        if (window.EmbedSocialHashtag) {
-            window.EmbedSocialHashtag.init()
-        } else {
-            const existingScript = document.getElementById(scriptId)
-            existingScript.remove()
+function loadWidget() {
+    if (!window.Cookiebot?.consent?.marketing) return
 
-            const js = document.createElement("script")
-            js.id = scriptId
-            js.src = "https://embedsocial.com/cdn/ht.js"
-            document.getElementsByTagName("head")[0].appendChild(js)
-        }
+    if (document.getElementById(scriptId)) {
+        window.EmbedSocialHashtag?.init()
+        return
     }
+    const js = document.createElement('script')
+    js.id = scriptId
+    js.src = 'https://embedsocial.com/cdn/ht.js'
+    document.head.appendChild(js)
+}
+
+onMounted(() => {
+    loadWidget()
+    window.addEventListener('CookiebotOnAccept', loadWidget)
+    window.addEventListener('CookiebotOnDecline', () => window.location.reload())
+})
+
+onUnmounted(() => {
+    window.removeEventListener('CookiebotOnAccept', loadWidget)
 })
 
 const homeFaq = [
