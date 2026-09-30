@@ -169,7 +169,7 @@
                     <p>
                         Le traitement des données personnelles susceptibles d'être collectées
                         ou traitées dans le cadre de l'utilisation du site est décrit dans la
-                        <RouterLink to="/politique-confidentialite"
+                        <RouterLink to="/Politique-Confidentialites"
                             class="text-molten underline hover:text-molten/80 transition-colors">
                             Politique de Confidentialité
                         </RouterLink>
