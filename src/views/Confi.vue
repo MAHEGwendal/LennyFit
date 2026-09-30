@@ -37,9 +37,9 @@
                         <!-- À VÉRIFIER : une adresse liée à votre nom de domaine serait plus cohérente qu'une adresse Gmail -->
                         <li>
                             <strong>Adresse e-mail :</strong>
-                            <a href="mailto:lennybriey96@gmail.com"
+                            <a href="mailto:lennybrieypro@gmail.com"
                                 class="text-molten underline hover:text-molten/80 transition-colors">
-                                lennybriey96@gmail.com
+                                lennybrieypro@gmail.com
                             </a>
                         </li>
                         <li>
@@ -53,8 +53,8 @@
 
                     <p>
                         Pour toute question sur vos données ou pour exercer vos droits, écrivez à
-                        <a href="mailto:lennybriey96@gmail.com"
-                            class="text-molten underline hover:text-molten/80 transition-colors">lennybriey96@gmail.com</a>.
+                        <a href="mailto:lennybrieypro@gmail.com"
+                            class="text-molten underline hover:text-molten/80 transition-colors">lennybrieypro@gmail.com</a>.
                     </p>
                 </section>
 
@@ -416,8 +416,8 @@
 
                     <p>
                         Pour exercer ces droits, écrivez à
-                        <a href="mailto:lennybriey96@gmail.com"
-                            class="text-molten underline hover:text-molten/80 transition-colors">lennybriey96@gmail.com</a>.
+                        <a href="mailto:lennybrieypro@gmail.com"
+                            class="text-molten underline hover:text-molten/80 transition-colors">lennybrieypro@gmail.com</a>.
                         LennyFit vous répond dans un délai d'un mois et peut vous demander un justificatif
                         d'identité en cas de doute raisonnable.
                     </p>

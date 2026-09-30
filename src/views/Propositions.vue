@@ -2,7 +2,7 @@
   <section
     class="relative w-full min-h-[50vh] flex flex-col justify-center items-center py-12 text-center overflow-hidden">
     <div class="absolute inset-0 z-0">
-      <img src="/hero/hero3.webp" alt="" class="w-full h-full object-cover" fetchpriority="high"/>
+      <img src="/hero/hero3.webp" alt="" class="w-full h-full object-cover" fetchpriority="high" />
       <div class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
     </div>
 
@@ -23,16 +23,18 @@
 
         <div class="space-y-6">
           <div v-for="service in categorie.services" :key="service.title"
-            class="bg-icemint flex items-stretch rounded-2xl shadow-xl/20 overflow-hidden"
-            :class="{ 'flex-row-reverse': service.globalIndex % 2 !== 0 }">
+            class="bg-icemint flex flex-col-reverse rounded-2xl shadow-xl/20 overflow-hidden md:items-stretch"
+            :class="service.globalIndex % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'">
+
             <div class="flex-1 flex flex-col text-left space-y-2 p-5 min-w-0">
               <h4 class="font-zalando font-medium text-lg lg:text-3xl text-ink leading-tight">{{ service.title }}</h4>
               <p class="font-zalando text-sm lg:text-lg text-ink/90 leading-relaxed">{{ service.description }}</p>
             </div>
 
-            <div class="w-24 sm:w-32 md:w-60 shrink-0"
-              :class="service.globalIndex % 2 === 0 ? 'border-l-2 border-molten' : 'border-r-2 border-molten'">
-              <img :src="service.image" :alt= "service.alt" class="w-full h-full object-cover">
+            <div class="w-full h-56 sm:h-64 md:h-auto md:w-60 shrink-0 border-b-2 border-molten md:border-b-0"
+              :class="service.globalIndex % 2 === 0 ? 'md:border-l-2' : 'md:border-r-2'">
+              <img :src="service.image" :alt="service.alt" loading="lazy"
+                :style="{ objectPosition: service.position || 'center' }" class="w-full h-full object-cover">
             </div>
           </div>
         </div>
@@ -44,9 +46,12 @@
 
   <div class="px-4 py-8 md:py-12 max-w-4xl mx-auto w-full">
     <div class="py-8 px-4 md:py-12 md:px-8 rounded-xl shadow-xl/30 bg-transparent">
-      <h4 class="font-zalando font-bold text-2xl md:text-3xl text-center mb-5 text-ink"> Prêt à passer au niveau supérieur ? </h4>
-      <p class="font-zalando text-md md:text-3xl text-center mb-8 text-ink">Je suis là pour vous accompagner dans votre parcours ! <br/>
-        À chaque profil correspond une méthode et un rythme. Découvrez mes différentes offres pour trouver l'accompagnement idéal
+      <h4 class="font-zalando font-bold text-2xl md:text-3xl text-center mb-5 text-ink"> Prêt à passer au niveau
+        supérieur ? </h4>
+      <p class="font-zalando text-md md:text-3xl text-center mb-8 text-ink">Je suis là pour vous accompagner dans votre
+        parcours ! <br />
+        À chaque profil correspond une méthode et un rythme. Découvrez mes différentes offres pour trouver
+        l'accompagnement idéal
         et adapté à vos objectifs.</p>
 
       <div class="flex justify-center">
@@ -69,19 +74,19 @@ const categories = [
         title: "Perte de poids",
         description: "Améliorer sa santé, son énergie et son bien-être en réduisant progressivement l'excès de poids de façon saine et durable.",
         image: "/image/squat2.webp",
-        alt:"Une personne en surpoids qui fait des squats"
+        alt: "Une femme qui fait des squats"
       },
       {
         title: "Activité physique adaptée (APA)",
         description: "Utiliser le mouvement comme outil de prévention, de rééducation, de maintien de l'autonomie et d'amélioration du bien-être, grâce à des exercices spécifiquement adaptés à chaque personne.",
-        image: "/image/etirement.webp",
-        alt:"Une femme qui fait des étirements"
+        image: "/image/APA.webp",
+        alt: "Le coach Lenny qui fait des pompes"
       },
       {
         title: "Renforcement du corps",
         description: "Développer et entretenir l'activité musculaire afin d'améliorer la silhouette, la posture, la stabilité et les capacités fonctionnelles au quotidien.",
-        image: "/image/test.webp",
-        alt:"Homme prenant du repos après une séance de sport intense"
+        image: "/image/renfo.webp",
+        alt: "Une femme qui fait des squats et un homme s'exerçant avec une corde"
       },
     ]
   },
@@ -93,19 +98,19 @@ const categories = [
         title: "Prise de masse",
         description: "Accompagner le développement musculaire en optimisant les méthodes d'entraînement, la progression des charges de travail et les habitudes favorisant la croissance musculaire.",
         image: "/image/grosMuscle.webp",
-        alt:"Homme qui contracte son biceps"
+        alt: "Un homme qui contracte son biceps"
       },
       {
         title: "Entraînement callisthénie",
         description: "La callisthénie est un modèle d'entraînement basé sur le poids du corps. À travers des exercices comme les tractions, les pompes, les dips ou le gainage, elle permet de développer sa force, le contrôle du corps et sa mobilité. Accessible à tous les niveaux, elle s’adapte à vos objectifs, que vous souhaitiez vous remettre en forme, gagner en force ou apprendre des mouvements plus avancés.",
         image: "/image/cali.webp",
-        alt:"Homme faisant des tractions"
+        alt: "Un homme qui fait de la callisthénie"
       },
       {
         title: "Préparation physique sport de force",
         description: "Fais évoluer ta force avec un plan d’entraînement sur mesure, adapté à ton sport et à tes objectifs. Que tu sois fan de power-lifting, de street-lifting, street-workout ou de musculation, chaque programme est conçu pour booster tes résultats tout en limitant les risques de blessure.",
         image: "/image/squat3.webp",
-        alt:"Personne qui se prépare à faire des squats"
+        alt: "Un homme qui se prépare à faire des squats"
       },
     ]
   }

@@ -136,7 +136,7 @@
             class="transform hover:scale-110 transition">
             <img src="/icon/facebookMolten.svg" alt="Facebook" class="w-20 h-20 md:w-25 md:h-25" />
         </a>
-        <a href="mailto:lennybriey96@gmail.com" aria-label="Envoyer un e-mail"
+        <a href="mailto:lennybrieypro@gmail.com" aria-label="Envoyer un e-mail"
             class="transform hover:scale-110 transition">
             <img src="/icon/emailMolten.svg" alt="E-mail" class="w-20 h-20 md:w-25 md:h-25" />
         </a>

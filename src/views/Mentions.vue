@@ -42,9 +42,9 @@
                         </li>
                         <li>
                             <strong>Adresse e-mail :</strong>
-                            <a href="mailto:lennybriey96@gmail.com"
+                            <a href="mailto:lennybrieypro@gmail.com"
                                 class="text-molten underline hover:text-molten/80 transition-colors">
-                                lennybriey96@gmail.com
+                                lennybrieypro@gmail.com
                             </a>
                         </li>
                         <li>
@@ -201,25 +201,7 @@
                 </section>
                 <section class="space-y-3">
                     <h2 class="font-krona text-xl sm:text-2xl text-ink border-b border-molten/20 pb-2">
-                        9. Médiation de la consommation
-                    </h2>
-
-                    <p>
-                        Lorsque les conditions légales applicables à l'activité l'exigent,
-                        le consommateur peut recourir gratuitement à un médiateur de la
-                        consommation compétent afin de rechercher une solution amiable
-                        à un éventuel litige.
-                    </p>
-
-                    <p>
-                        Les coordonnées du médiateur de la consommation dont relève LennyFit
-                        seront indiquées sur le site et dans les documents contractuels
-                        concernés dès lors que cette obligation est applicable.
-                    </p>
-                </section>
-                <section class="space-y-3">
-                    <h2 class="font-krona text-xl sm:text-2xl text-ink border-b border-molten/20 pb-2">
-                        10. Modification des mentions légales
+                        9. Modification des mentions légales
                     </h2>
 
                     <p>

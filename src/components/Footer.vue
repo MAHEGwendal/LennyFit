@@ -8,7 +8,7 @@
       <div class="flex justify-center md:flex-col md:items-start space-y-4">
         <GoogleRatingWidget
           :rating="5"
-          :review-count="1"
+          :review-count="3"
           link="https://www.google.com/maps/place/LennyFit/@47.2383201,-1.6429067,12z/data=!3m1!4b1!4m6!3m5!1s0x2a6ab5f8560c691:0x1f5a6d95a661c95f!8m2!3d47.2382332!4d-1.5603346!16s%2Fg%2F11zxq84_jt?entry=ttu&g_ep=EgoyMDI2MDkyMS4wIKXMDSoASAFQAw%3D%3D"
         />
       </div>
@@ -30,7 +30,7 @@
           class="cursor-pointer hover:scale-110 transition-transform duration-200">
           <img src="/icon/facebookMoon.svg" alt="Facebook" class="w-12 h-12 md:w-20 md:h-20" />
         </a>
-        <a href="mailto:lennybriey96@gmail.com" aria-label="Envoyez-moi un e-mail"
+        <a href="mailto:lennybrieypro@gmail.com" aria-label="Envoyez-moi un e-mail"
           class="cursor-pointer hover:scale-110 transition-transform duration-200">
           <img src="/icon/emailMoon.svg" alt="E-mail" class="w-12 h-12 md:w-20 md:h-20" />
         </a>

@@ -55,7 +55,7 @@ import { computed } from 'vue'
 
 const props = defineProps({
   rating: { type: Number, default: 5 },
-  reviewCount: { type: Number, default: 1 },
+  reviewCount: { type: Number, default: 3 },
   link: { type: String, default: 'https://www.google.com/maps/place/LennyFit/@47.2383201,-1.6429067,12z/data=!3m1!4b1!4m6!3m5!1s0x2a6ab5f8560c691:0x1f5a6d95a661c95f!8m2!3d47.2382332!4d-1.5603346!16s%2Fg%2F11zxq84_jt?entry=ttu&g_ep=EgoyMDI2MDkyMS4wIKXMDSoASAFQAw%3D%3D' },
 })
 

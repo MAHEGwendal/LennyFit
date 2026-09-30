@@ -1,7 +1,7 @@
 <template>
     <nav class="w-full sticky top-0 z-40 bg-moon text-ink border-b border-gray-100 shadow-md"
         aria-label="Barre de navigation">
-        <div class="w-full mx-auto px-4 py-3 lg:px-8 lg:py-4 flex items-center justify-between">
+        <div class="w-full mx-auto px-4 py-3 lg:px-6 xl:px-8 lg:py-4 flex items-center justify-between gap-4">
             <router-link to="/" class="tracking-tighter shrink-0">
                 <img src="/logos/Logo_secondaire_NO.svg" alt="Logo LennyFit" class="w-40 md:w-48 lg:w-70 h-auto ">
             </router-link>

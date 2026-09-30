@@ -23,18 +23,18 @@
             <div
                 class="w-full max-w-2xl border-2 border-ink/20 rounded-2xl p-6 md:p-8 bg-transparent shadow-xl/30 space-y-6">
                 <div class="flex items-center gap-4 pb-4 border-b border-molten">
-                    <img src="/icon/Profile.svg" alt="" class="w-8 h-8 md:w-10 md:h-10 shrink-0" aria-hidden="true" />
+                    <img src="/icon/Profile.svg" alt="" class="w-8 h-8 md:w-10 md:h-10 shrink-0" aria-hidden="true" loading="lazy"/>
                     <span class="font-zalando font-bold text-xl md:text-2xl text-ink">Lenny Briey</span>
                 </div>
                 <div class="flex items-center gap-4 pb-4 border-b border-molten">
-                    <img src="/icon/Phone.svg" alt="" class="w-8 h-8 md:w-10 md:h-10 shrink-0" aria-hidden="true" />
+                    <img src="/icon/Phone.svg" alt="" class="w-8 h-8 md:w-10 md:h-10 shrink-0" aria-hidden="true" loading="lazy" />
                     <a href="tel:+33651316024"
                         class="font-zalando font-medium text-lg md:text-xl text-ink hover:text-molten transition-colors">
                         06 51 31 60 24
                     </a>
                 </div>
                 <div class="flex items-center gap-4 pb-4 border-b border-molten">
-                    <img src="/icon/EmailBlack.svg" alt="" class="w-8 h-8 md:w-10 md:h-10 shrink-0"
+                    <img src="/icon/EmailBlack.svg" alt="" class="w-8 h-8 md:w-10 md:h-10 shrink-0 " loading="lazy"
                         aria-hidden="true" />
                     <a href="mailto:lennybrieypro@gmail.com"
                         class="font-zalando font-medium text-lg md:text-xl text-ink hover:text-molten transition-colors break-all">
@@ -42,13 +42,13 @@
                     </a>
                 </div>
                 <div class="flex items-center gap-4 pb-4 border-b border-molten">
-                    <img src="/icon/Address.svg" alt="" class="w-8 h-8 md:w-10 md:h-10 shrink-0" aria-hidden="true" />
+                    <img src="/icon/Address.svg" alt="" class="w-8 h-8 md:w-10 md:h-10 shrink-0" aria-hidden="true" loading="lazy" />
                     <address class="font-zalando font-medium text-lg md:text-xl text-ink not-italic leading-tight">
                         19 Avenue Condorcet, Saint-Herblain 44800
                     </address>
                 </div>
                 <div class="flex items-start gap-4 pt-2">
-                    <img src="/icon/Clock.svg" alt="" class="w-8 h-8 md:w-10 md:h-10 shrink-0 mt-1"
+                    <img src="/icon/Clock.svg" alt="" class="w-8 h-8 md:w-10 md:h-10 shrink-0 mt-1" loading="lazy"
                         aria-hidden="true" />
                     <div class="w-full">
                         <h4
