@@ -3,7 +3,7 @@
         class="relative w-full min-h-[90vh] flex flex-col justify-center items-center px-4 py-12 text-center overflow-hidden">
 
         <div class="absolute inset-0 z-0">
-            <img src="/hero/hero1.jpg" alt="" class="w-full h-full object-cover" fetchpriority="high" />
+            <img src="/hero/hero1.webp" alt="" class="w-full h-full object-cover" fetchpriority="high" />
             <div class="absolute inset-0 bg-black/60 backdrop-blur-[10px]"></div>
         </div>
 

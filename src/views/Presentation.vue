@@ -3,7 +3,7 @@
         class="relative w-full min-h-[50vh] flex flex-col justify-center items-center py-12 text-center overflow-hidden">
 
         <div class="absolute inset-0 z-0">
-            <img src="/hero/hero2.jpg" alt="" class="w-full h-full object-cover" fetchpriority="high"/>
+            <img src="/hero/hero2.webp" alt="" class="w-full h-full object-cover" fetchpriority="high"/>
             <div class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
         </div>
 
@@ -28,7 +28,7 @@
                 </h2>
 
                 <div class="shrink-0 z-10">
-                    <img src="/image/lenny2.jpg" alt="Photo du coach Lenny"
+                    <img src="/image/lenny2.webp" alt="Photo du coach Lenny"
                         class="w-64 h-64 md:w-80 md:h-80 lg:w-120 lg:h-120 rounded-full border-4 border-molten shadow-2xl object-cover mx-auto" />
                 </div>
 
@@ -148,22 +148,22 @@ const qualite = [
     {
         name: "Impliqué",
         texte: "Être présent à chaque étape pour guider, soutenir et vous faire progresser vers vos objectifs.",
-        img: "/image/barrePoids.jpg"
+        img: "/image/barrePoids.webp"
     },
     {
         name: "À l’écoute",
         texte: "Une relation humaine basée sur le respect mutuel et la transparence pour avancer ensemble en toute sérénité.",
-        img: "/image/squat1.jpg"
+        img: "/image/squat1.webp"
     },
     {
         name: "Motivant",
         texte: "Entretenir l'envie d'avancer et de persévérer grâce à un soutien constant et des objectifs adaptés à chacun.",
-        img: "/image/poids.jpg"
+        img: "/image/poids.webp"
     },
     {
         name: "Pédagogue",
         texte: "Transmettre les clés de chaque mouvement pour t'aider à comprendre ton entraînement et progresser en toute autonomie.",
-        img: "/image/dc.jpg"
+        img: "/image/dc.webp"
     }
 ]
 </script>
