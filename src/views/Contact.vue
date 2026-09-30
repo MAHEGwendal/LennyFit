@@ -3,7 +3,7 @@
         class="relative w-full min-h-[50vh] flex flex-col justify-center items-center py-12 text-center overflow-hidden">
 
         <div class="absolute inset-0 z-0">
-            <img src="/hero/hero5.webp" alt="" class="w-full h-full object-cover" fetchpriority="high" />
+            <img src="/hero/hero5.webp" alt="" width="1920" height="1080" class="w-full h-full object-cover" fetchpriority="high" />
             <div class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
         </div>
 
