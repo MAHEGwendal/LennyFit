@@ -248,15 +248,17 @@ let widgetLoaded = false
 
 function loadWidget() {
     if (!window.Cookiebot?.consent?.marketing) return
-
-    if (document.getElementById(scriptId)) {
-        window.EmbedSocialHashtag?.init()
-    } else {
-        const js = document.createElement('script')
-        js.id = scriptId
-        js.src = 'https://embedsocial.com/cdn/ht.js'
-        document.head.appendChild(js)
+    
+    const existingScript = document.getElementById(scriptId)
+    if (existingScript) {
+        existingScript.remove()
     }
+    const js = document.createElement('script')
+    js.id = scriptId
+    js.src = 'https://embedsocial.com/cdn/ht.js'
+    js.async = true
+    document.head.appendChild(js)
+
     widgetLoaded = true
 }
 
