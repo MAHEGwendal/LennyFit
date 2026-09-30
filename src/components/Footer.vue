@@ -50,6 +50,8 @@
           Politique de confidentialité</RouterLink>
         <RouterLink to="/Mentions-Legales" class="hover:text-molten hover:underline transition-colors">Mentions légales
         </RouterLink>
+        <RouterLink to="/Cookies" class="hover:text-molten hover:underline transition-colors">Gérer mes cookies
+        </RouterLink>
       </div>
     </div>
 
@@ -66,6 +68,5 @@ const navLinks = [
   { name: 'Formules', href: '/Formules' },
   { name: 'FAQ', href: '/Faq' },
   { name: 'Contact', href: '/Contact' },
-  { name: 'Gérer mes cookies', href: '/Cookies' },
 ]
 </script>

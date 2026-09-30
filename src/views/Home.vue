@@ -244,28 +244,35 @@ import { onMounted, onUnmounted } from 'vue'
 import FaqAccordeon from '@/components/FaqAccordeon.vue'
 
 const scriptId = 'EmbedSocialHashtagScript'
+let widgetLoaded = false
 
 function loadWidget() {
     if (!window.Cookiebot?.consent?.marketing) return
 
     if (document.getElementById(scriptId)) {
         window.EmbedSocialHashtag?.init()
-        return
+    } else {
+        const js = document.createElement('script')
+        js.id = scriptId
+        js.src = 'https://embedsocial.com/cdn/ht.js'
+        document.head.appendChild(js)
     }
-    const js = document.createElement('script')
-    js.id = scriptId
-    js.src = 'https://embedsocial.com/cdn/ht.js'
-    document.head.appendChild(js)
+    widgetLoaded = true
+}
+
+function onDecline() {
+    if (widgetLoaded) window.location.reload()
 }
 
 onMounted(() => {
     loadWidget()
     window.addEventListener('CookiebotOnAccept', loadWidget)
-    window.addEventListener('CookiebotOnDecline', () => window.location.reload())
+    window.addEventListener('CookiebotOnDecline', onDecline)
 })
 
 onUnmounted(() => {
     window.removeEventListener('CookiebotOnAccept', loadWidget)
+    window.removeEventListener('CookiebotOnDecline', onDecline)
 })
 
 const homeFaq = [
