@@ -8,15 +8,22 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, onBeforeUnmount } from 'vue'
 
 const declaration = ref(null)
 
 onMounted(() => {
+    declaration.value.innerHTML = ''
+
     const js = document.createElement('script')
     js.id = 'CookieDeclaration'
     js.src = 'https://consent.cookiebot.com/a77cb1d3-d80a-4bfa-8a2b-2653f5e5e5f4/cd.js'
+    js.type = 'text/javascript'
     js.async = true
     declaration.value.appendChild(js)
+})
+
+onBeforeUnmount(() => {
+    if (declaration.value) declaration.value.innerHTML = ''
 })
 </script>

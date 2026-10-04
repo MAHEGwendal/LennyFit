@@ -193,8 +193,6 @@
                         https://support.fillout.com/privacy
                     </a>
                 </section>
-
-                <!-- 6. Cookies -->
                 <section class="space-y-3">
                     <h2 class="font-krona text-xl sm:text-2xl text-ink border-b border-molten/20 pb-2">
                         6. Cookies et autres traceurs
@@ -232,8 +230,6 @@
                         qui détaille chaque cookie utilisé.
                     </p>
                 </section>
-
-                <!-- 7. EmbedSocial -->
                 <section class="space-y-3">
                     <h2 class="font-krona text-xl sm:text-2xl text-ink border-b border-molten/20 pb-2">
                         7. Avis et témoignages – EmbedSocial et YouTube
@@ -266,8 +262,6 @@
                         </li>
                     </ul>
                 </section>
-
-                <!-- 8. Destinataires -->
                 <section class="space-y-3">
                     <h2 class="font-krona text-xl sm:text-2xl text-ink border-b border-molten/20 pb-2">
                         8. Destinataires des données
@@ -301,8 +295,6 @@
                         ne sont ni vendues ni louées.
                     </p>
                 </section>
-
-                <!-- 9. Durées de conservation -->
                 <section class="space-y-3">
                     <h2 class="font-krona text-xl sm:text-2xl text-ink border-b border-molten/20 pb-2">
                         9. Durées de conservation
@@ -334,19 +326,17 @@
                         conservation reste nécessaire pour constater, exercer ou défendre un droit en justice.
                     </p>
                 </section>
-
-                <!-- 10. Transferts -->
                 <section class="space-y-3">
                     <h2 class="font-krona text-xl sm:text-2xl text-ink border-b border-molten/20 pb-2">
                         10. Transferts de données hors de l'Union européenne
                     </h2>
 
-                    <!-- À VÉRIFIER : confirmez que Restly, Inc. est certifié Data Privacy Framework (dataprivacyframework.gov) ou que le DPA de Fillout intègre les clauses contractuelles types. Ajustez la phrase en conséquence. -->
                     <p>
-                        Vos réponses au formulaire sont stockées par Fillout aux États-Unis. Ce transfert est
-                        encadré par les garanties prévues par le RGPD : le Data Privacy Framework UE-États-Unis, si
-                        l'entreprise y est certifiée, ou à défaut les clauses contractuelles types de la Commission
-                        européenne.
+                        Vos réponses au formulaire sont stockées par Fillout, dont la société éditrice, Restly, Inc.,
+                        est établie aux États-Unis. Restly, Inc. n'est pas certifiée au Data Privacy Framework
+                        UE-États-Unis. Ce transfert est donc encadré par les clauses contractuelles types de la
+                        Commission européenne, intégrées à l'accord de traitement des données (DPA) conclu avec
+                        Fillout, conformément à l'article 46 du RGPD.
                     </p>
 
                     <p>

@@ -147,61 +147,7 @@
                 </section>
                 <section class="space-y-3">
                     <h2 class="font-krona text-xl sm:text-2xl text-ink border-b border-molten/20 pb-2">
-                        6. Liens vers des sites tiers
-                    </h2>
-
-                    <p>
-                        Le site peut contenir des liens hypertextes vers des sites ou services
-                        externes exploités par des tiers, notamment des réseaux sociaux.
-                    </p>
-
-                    <p>
-                        LennyFit ne contrôle pas le contenu, la disponibilité ou les pratiques
-                        de ces sites tiers et ne saurait être tenu responsable des traitements
-                        ou contenus qui y sont réalisés.
-                    </p>
-                </section>
-                <section class="space-y-3">
-                    <h2 class="font-krona text-xl sm:text-2xl text-ink border-b border-molten/20 pb-2">
-                        7. Données personnelles
-                    </h2>
-
-                    <p>
-                        Le traitement des données personnelles susceptibles d'être collectées
-                        ou traitées dans le cadre de l'utilisation du site est décrit dans la
-                        <RouterLink to="/Politique-Confidentialites"
-                            class="text-molten underline hover:text-molten/80 transition-colors">
-                            Politique de Confidentialité
-                        </RouterLink>
-                        de LennyFit.
-                    </p>
-
-                    <p>
-                        Cette politique précise notamment les catégories de données susceptibles
-                        d'être traitées, les finalités des traitements, les bases légales,
-                        les prestataires concernés ainsi que les droits dont disposent les
-                        personnes concernées.
-                    </p>
-                </section>
-                <section class="space-y-3">
-                    <h2 class="font-krona text-xl sm:text-2xl text-ink border-b border-molten/20 pb-2">
-                        8. Conditions générales de vente
-                    </h2>
-
-                    <p>
-                        Lorsque des prestations de coaching ou d'accompagnement sont proposées
-                        à la vente, les conditions applicables à ces prestations sont précisées
-                        dans les Conditions Générales de Vente (CGV) de LennyFit.
-                    </p>
-
-                    <p>
-                        Lorsque leur établissement est obligatoire, les CGV sont mises à la
-                        disposition du client avant la conclusion du contrat.
-                    </p>
-                </section>
-                <section class="space-y-3">
-                    <h2 class="font-krona text-xl sm:text-2xl text-ink border-b border-molten/20 pb-2">
-                        9. Modification des mentions légales
+                        6. Modification des mentions légales
                     </h2>
 
                     <p>
