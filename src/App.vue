@@ -2,6 +2,7 @@
 import Navbar from '@/components/Navbar.vue'
 import Footer from '@/components/Footer.vue'
 import ScrollToTopButton from '@/components/ScrollToTopButton.vue'
+import CookieBanner from '@/components/CookieBanner.vue'
 </script>
 
 <template>
@@ -18,4 +19,5 @@ import ScrollToTopButton from '@/components/ScrollToTopButton.vue'
     <Footer />
   </div>
   <ScrollToTopButton />
+  <CookieBanner />
 </template>

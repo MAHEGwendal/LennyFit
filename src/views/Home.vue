@@ -158,6 +158,8 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Section Sport performance -->
                     <div class="flex-1 flex flex-col rounded-2xl shadow-xl/30 py-8 px-3 border-2 border-black/10">
                         <h3 class="font-krona text-2xl mb-8 text-ink text-center">Sport performance</h3>
                         <div class="space-y-6">
@@ -192,6 +194,7 @@
                                     </RouterLink>
                                 </div>
                             </div>
+
                             <div class="bg-icemint flex items-center p-5 rounded-2xl gap-5 shadow-xl/20">
                                 <img src="/icon/squat.svg" alt="" class="w-16 h-16 shrink-0 my-auto">
                                 <div class="flex flex-col text-left space-y-2">
@@ -229,10 +232,24 @@
         <div class="px-2 py-5 lg:px-80">
             <div class="py-2 px-1 border-2 border-molten/40 rounded-xl shadow-xl/20">
                 <h3 class="font-krona text-xl text-center lg:text-left lg:px-4 lg:text-2xl">Ils me font confiance</h3>
-                 <div class="embedsocial-hashtag" data-ref="cc620d56d954d48c62c5d59c2e4f1c481ac18555">
+
+                <!-- Widget : uniquement si les cookies sont acceptés -->
+                <div v-if="consent === 'accepted'" class="embedsocial-hashtag"
+                    data-ref="cc620d56d954d48c62c5d59c2e4f1c481ac18555">
                     <a class="feed-powered-by-es feed-powered-by-es-feed-img es-widget-branding"
                         href="https://embedsocial.com/" target="_blank" title="Widget by EmbedSocial">
                     </a>
+                </div>
+
+                <!-- Message sinon -->
+                <div v-else class="flex flex-col items-center gap-4 py-8 px-4 text-center">
+                    <p class="font-zalando text-base md:text-lg text-ink/80">
+                        Merci d'accepter les cookies pour pouvoir accéder aux avis Google.
+                    </p>
+                    <button type="button" @click="accept"
+                        class="bg-molten text-ink font-zalando font-medium px-6 py-2.5 rounded-xl shadow-xl/20 transform hover:scale-105 transition">
+                        Accepter les cookies
+                    </button>
                 </div>
             </div>
         </div>
@@ -240,45 +257,44 @@
 </template>
 
 <script setup>
-import { onMounted, onUnmounted } from 'vue'
+import { watch, onMounted } from 'vue'
 import FaqAccordeon from '@/components/FaqAccordeon.vue'
+import { useCookieConsent } from '@/composables/useCookieConsent'
+
+const { consent, load, accept } = useCookieConsent()
+
+// Lit le choix déjà enregistré (le CookieBanner n'est pas forcément monté avant cette page)
+load()
 
 const scriptId = 'EmbedSocialHashtagScript'
-let widgetLoaded = false
 
 function loadWidget() {
-    if (!window.Cookiebot?.consent?.marketing) return
-    
-    const existingScript = document.getElementById(scriptId)
-    if (existingScript) {
-        existingScript.remove()
-    }
+    document.getElementById(scriptId)?.remove()
+
     const js = document.createElement('script')
     js.id = scriptId
     js.src = 'https://embedsocial.com/cdn/ht.js'
     js.async = true
     document.head.appendChild(js)
-
-    widgetLoaded = true
 }
 
-function onDecline() {
-    if (widgetLoaded) window.location.reload()
-}
-
+// Chargement initial si le consentement existe déjà
 onMounted(() => {
-    loadWidget()
-    window.addEventListener('CookiebotOnAccept', loadWidget)
-    window.addEventListener('CookiebotOnDecline', onDecline)
+    if (consent.value === 'accepted') loadWidget()
 })
 
-onUnmounted(() => {
-    window.removeEventListener('CookiebotOnAccept', loadWidget)
-    window.removeEventListener('CookiebotOnDecline', onDecline)
-})
+// Réaction aux changements de choix (bandeau ou lien « Gérer mes cookies »)
+// flush: 'post' garantit que le <div class="embedsocial-hashtag"> est dans le DOM avant le script
+watch(consent, (value, oldValue) => {
+    if (value === 'accepted') {
+        loadWidget()
+    } else if (oldValue === 'accepted') {
+        // Le script EmbedSocial a injecté du contenu et des traceurs : on repart d'une page propre
+        window.location.reload()
+    }
+}, { flush: 'post' })
 
 const homeFaq = [
-    
     {
         title: "Questions courantes",
         question: "Je n'ai pas fait de sport depuis des années, est-ce que je peux quand même commencer ?",

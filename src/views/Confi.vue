@@ -204,7 +204,7 @@
 
                     <p>
                         <strong>Cookies nécessaires.</strong> Le site utilise un cookie technique de gestion du
-                        consentement (Cookiebot), qui enregistre votre choix. Il est indispensable au respect de vos
+                        consentement, qui enregistre votre choix. Il est indispensable au respect de vos
                         préférences et ne requiert pas de consentement. Le formulaire Fillout peut également utiliser
                         des cookies techniques nécessaires à son fonctionnement.
                     </p>
